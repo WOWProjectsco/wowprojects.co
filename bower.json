@@ -1,0 +1,15 @@
+{
+    "name": "wowprojects.co",
+    "version": "0.1.0",
+    "authors": [
+        "Edwin Xico <http://xicoofficial.co/>"
+    ],
+    "description": "wowprojects official website",
+    "license": "Apache License",
+    "homepage": "http://wowprojects.co",
+    "dependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.0",
+    "fontawesome": "~4.5.0"
+  }
+}
