@@ -25,9 +25,11 @@
 wow_green_olive = #4b7447 
 wow_white_bone = #F8F1E5 // white olive: #F8F1E5
 wow_black_coal = #2F3131
+wow_blue_steel = #426e86
+wow_red_tomato = #cf3721
 
 wow_font01 = NeueHaasBold, Helvetica, sans-serif
-
+wow_font02 = 'Tungsten A', 'Tungsten B'
 
 /*
 * User Agent
@@ -331,7 +333,7 @@ h1:last-child, h1:only-child, h2:last-child, h2:only-child, h4:last-child, h4:on
 
 .header-number .data-number
 	pointer-events none
-	font-familly wow_font01
+	font-family wow_font01
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 	color wow_red_tomato	
@@ -405,6 +407,154 @@ h1:last-child, h1:only-child, h2:last-child, h2:only-child, h4:last-child, h4:on
 
 .height-80
 	min-height 80vh
+
+
+
+/**********************************
+* Being WOW
+***********************************/
+.wow-beingWow
+	padding 170px 0 0
+	#being-wow
+		border-top 8px solid wow_black_coal
+		padding-top 95px
+		padding-bottom 150px
+		text-align center
+		p.title
+			font-family wow_font02
+			font-weight 400
+			font-style normal
+			font-weight 300
+			font-size 30px
+			line-height 30px
+			color wow_black_coal
+			text-transform uppercase
+			strong
+				font-weight 500
+		#slider-wrap
+			margin 120px auto
+			padding 0 50px auto
+			position relative
+			max-width 1080px
+		#value-slider
+			max-width 1000px
+			margin 0 auto
+			article
+				display block
+				margin 0 auto
+				min-height 107px
+				text-align center
+				position relative
+				width 100%
+				.wrap
+					border 0
+					padding 0
+					margin 0
+					display inline-block
+					position relative
+					left auto
+					margin 0 auto
+				span
+					font-family wow_font01
+					font-style italic
+					font-size 80px
+					line-height 80px
+					display inline-block
+					color wow_black_coal
+					position absolute
+					left 0
+					padding 10px 0 0
+				div
+					display block
+					border-left 1px solid wow_blue_steel
+					margin-left 125px
+					position relative
+					paddingn 0 0 0 45px
+					text-align left
+				h4
+					font-family wow_font01
+					font-style italic
+					color wow_red_tomato
+					font-size 70px
+					line-height 75px
+					margin 0
+					display block
+				p
+					font-size 18px
+					line-height 32px
+					color wow_black_coal
+					font-weight 300
+					margin 0
+		.slider-right
+			right 0
+			top 25px
+			position absolute
+			-webkit-transition opacity .2s ease-in-out
+			transition opacity .2s ease-in-out
+		.slider-left
+			left 0
+			top 25px
+			position absolute
+			-webkit-transition opacity .2s ease-in-out
+			transition opacity .2s ease-in-out
+		.slider-right:hover, .slider-left:hover
+			opacity 0.5
+			filter alpha opacity=50
+		.pager
+			font-family wow_font02
+			font-weight 400
+			font-style normal
+			span
+				font-size 20px
+				padding 9px 16px 9px 18px
+				margin 0 5px
+				line-height 20px
+				font-weight 300
+				text-align center
+				a
+					color wow_blue_steel
+				a:hover
+					color wow_red_tomato
+			.cycle-pager-active
+				border-radius 50%
+				border 1px solid wow_red_tomato
+				color wow_red_tomato
+				a
+					color wow_red_tomato
+			
+	#being-wow>p
+		color  wow_blue_steel
+		font-family wow_font01
+		font-style italic
+		font-size 30px
+		line-height 48.6px
+	
+@media only screen and (max-width: 1215px) {
+   .wow-beingWow #being-wow .slider-left {
+        left: 20px;
+        top: 18px
+    }
+    .wow-beingWow #being-wow .slider-right {
+        right: 20px;
+        top: 18px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wow-beingWow #being-wow #slider-wrap {
+        padding: 0 30px
+    }
+    .wow-beingWow .slider-left,
+    .wow-beingWow .slider-right {
+        display: none
+    }
+    .wow-beingWow #being-wow .pager span {
+        margin: 0
+    }
+
+}
+
 
 
 /**********************************
