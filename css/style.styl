@@ -22,6 +22,62 @@
  * @link     http://wowprojects.co
  */
 
+wow_green_olive = #4b7447 
+wow_white_bone = #F8F1E5 // white olive: #F8F1E5
+wow_black_coal = #2F3131
+
+wow_font01 = NeueHaasBold, Helvetica, sans-serif
+
+
+/*
+* User Agent
+*/
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+}
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
 
 /*
 * General Styling
@@ -34,11 +90,334 @@ body
 	width 100%
 	height 100%
 	
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input
+a,abbr,acronym,address,applet,article,aside,audio,b,big,
+blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,
+em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,
+img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,
+span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline
+	
+img
+	display block
+	width 100%
+	height auto
 	margin 0
 	padding 0
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input
-	margin 0
-	padding 0
+ol, ul
+	list-style none
 
+article
+	display block
+	position relative
+	overflow hidden
+
+h1, h2
+	font-family wow_font01
+	font-weight 400
+	letter-spacing -.01em
+	color wow_white_bone
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+h2
+	font-size 2.9em
+	line-height 1
+	margin-bottom 1em
+
+h1
+	font-size 5.25em
+	margin-bottom .05em
+
+.footer-next-study-link, footer, header, main, nav
+	font-size 100%
+
+*, :after, :before
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+button, input, select, textarea
+	-webkit-appearance none
+	border 0
+	outline 0
+	border-radius 0
+
+article, div, footer, header, main, nav, section
+	display block
+	position relative
+	overflow hidden
+
+.case-study-tagline, .client-list, .form-text, .staff-name, h1, h2, h3, h4, h5, h6 {
+    -webkit-font-feature-settings: "liga","kern";
+    -moz-font-feature-settings: "liga","kern";
+    font-feature-settings: "liga","kern";
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+/**********************************
+* Navigation
+***********************************/
+.padded
+	padding 3em
+	
+nav
+	z-index 997
+	position absolute
+	top 0
+	right 0
+	left 0
+	width 100%
+	pointer-events none
+	a
+		pointer-events auto
+
+#mobile-menu-button, #nclud-logo
+	z-index 998
+
+#nclud-logo
+	width 3.3em
+	position relative
+	float left
+	
+#site-nav
+	float right
+	li
+		display block
+		float left
+		margin-right 1em
+		width 12em
+		a
+			.data-number
+				display block
+				text-align left
+				border-bottom 2px solid wow_white_bone
+				padding-bottom .2em
+				margin-bottom .25em
+	a
+		font-family wow_font01
+		font-weight 400
+		color wow_white_bone
+		-webkit-font-smoothing antialiased
+		-moz-osx-font-smoothing grayscale
+		text-decoration none
+		font size .85em
+		white-space nowrap
+		.data-number
+			font-size 2.25em
+
+#mobile-menu-button 
+	display none
+
+
+/**********************************
+* Header
+***********************************/
+header
+	background-size cover
+	background-color center center
+	overflow visible
+	
+.height-95
+	min-height 95vh
+	
+.black
+	background-color wow_black_coal
+
+.grid_row
+	width 100%
+	overflow visible
+	
+.grid_row:after
+	clear both
+	display table
+	content: ''
+
+.padded-horizontal
+	padding-left 3em
+	padding-right 3em
+
+.header-text {
+    position: absolute;
+    top: 58%;
+    top: -moz-calc(50% + 3em);
+    top: -o-calc(50% + 3em);
+    top: -webkit-calc(50% + 3em);
+    top: calc(50% + 3em);
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index 10;
+}
+
+.grid2 {
+    float: left;
+    width: 64%;
+    width: -moz-calc(((100% / 3) * 2) - 25px);
+    width: -o-calc(((100% / 3) * 2) - 25px);
+    width: -webkit-calc(((100% / 3) * 2) - 25px);
+    width: calc(((100% / 3) * 2) - 25px);
+}
+
+.grid3
+	clear both
+	width 100%
+
+.grid1, grid2
+	margin-right 50px
+	overflow visible
+
+h1:last-child, h1:only-child, h2:last-child, h2:only-child, h4:last-child, h4:only-child, h6:last-child, h6:only-child, p:last-child, p:only-child
+	margin-bottom 0
+
+#canvas
+	position absolute
+	top 50%
+	left 50%
+	-webkit-transform translate(-50%,-50%)
+	-moz-transform translate(-50%,-50%)
+	-ms-transform translate(-50%,-50%)
+	-o-transform translate(-50%,-50%)
+	transform translate(-50%,-50%)
+	min-width 100%
+	canvas
+		position absolute
+		top 0
+		rigth 0
+		bottom 0
+		left 0
+		width 100%
+		height 100%
+		opacity 1
+
+#webg1
+	-webkit-transition opacity .125s
+	-moz-transition opacity .125s
+	transition opacity .125s
+
+
+
+/**********************************
+* Medium Screen
+***********************************/
+@media only screen and (max-width: 1025px) and (min-width: 802px)
+	nav, header, main
+		font-size 82%
+		
+
+
+
+/**********************************
+* Medium-Small Screen
+***********************************/
+@media only screen and (max-width: 801px) and (min-width: 642px)
+	nav, header, main
+		font-size 80%
+		
+
+
+
+/**********************************
+* Small Screen
+***********************************/
+@media only screen and (max-width: 641px)
+	nav, header, main
+		font-size 70%
+		
+	nav
+		overflow visible
+		pointer-events auto
+
+	h1
+		line-height .9
+		font-size 5em
+
+	h2
+		font-size 2.1em
+		
+	.padded
+		padding 25px
+		
+	.padded-horizontal
+		padding-left 25px
+		padding-right 25px
+
+	.padded-vertical
+		padding-top 25px
+		padding-bottom 25px
+
+	#site-nav
+		overflow visible
+		pointer-events auto
+		display none
+		float none
+		position fixed
+		top 0
+		right 0
+		left 0
+		width 100%
+		height 150%
+		background wow_green_olive
+		li
+			overflow visible
+			float none
+			width 100%
+			margin-right 0
+			position absolute
+			top 35%
+			left 0
+			pading 0.25px
+		li:first-child
+			transform translateY(-200%)
+		a
+			font-size 2.3em 
+
+
+	#mobile-menu-button
+		display block
+		width 32px
+		height 26px
+		background 0 0
+		cursor pointer
+		border-top 4px solid wow_white_bone
+		border-bottom 4px solid wow_white_bone
+		position absolute
+		top 32px
+		right 25px
+
+	#mobile-menu-button:after, #mobile-menu-button:before
+		display block
+		position absolute
+		top 50%
+		left 50%
+		width 100%
+		height 4px
+		background wow_white_bone
+		-webkit-transform translate3d(-50%, -50%, 0)
+		-moz-transform translate3d(-50%, -50%, 0)
+		-ms-transform translate3d(-50%, -50%, 0)
+		-o-transform translate3d(-50%, -50%, 0)
+		transform translate3d(-50%, -50%, 0)
+		content ''
+
+
+
+	.grid1, .grid2, .grid3 {
+    	width: 100%;
+    	margin-bottom: 22px;
+    	margin-right: 0;
+	}
