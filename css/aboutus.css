@@ -75,31 +75,31 @@
   margin-bottom: 29px;
 }
 @media only screen and (max-width: 980px) {
-  .wow-aboutUs #banner h1 {
+  #wow-aboutUs #banner h1 {
     font-size: 40px;
     line-height: 64.8px;
   }
-  .wow-aboutUs #banner h2 {
+  #wow-aboutUs #banner h2 {
     padding: 0 20px;
     font-size: 20px;
     line-height: 36px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .wow-aboutUs #banner {
+  #wow-aboutUs #banner {
     height: 250px;
     padding-top: 50px;
   }
-  .wow-aboutUs #banner h1,
-  .wow-aboutUs #banner h2 {
+  #wow-aboutUs #banner h1,
+  #wow-aboutUs #banner h2 {
     z-index: 2;
     position: relative;
   }
-  .wow-aboutUs #banner h2 {
+  #wow-aboutUs #banner h2 {
     font-size: 16px;
     line-height: 30px;
   }
-  .wow-aboutUs #banner:before {
+  #wow-aboutUs #banner:before {
     content: "";
     display: block;
     width: 100%;
@@ -110,29 +110,29 @@
     left: 0;
     z-index: 1;
   }
-  .wow-aboutUs #humaan-intro {
+  #wow-aboutUs #humaan-intro {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
   }
-  .wow-aboutUs #humaan-intro p {
+  #wow-aboutUs #humaan-intro p {
     font-size: 18px;
     line-height: 30px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .wow-aboutUs #banner h1 {
+  #wow-aboutUs #banner h1 {
     font-size: 30px;
     line-height: 40px;
     margin-top: 20px;
   }
-  .wow-aboutUs #banner br {
+  #wow-aboutUs #banner br {
     display: none;
   }
-  .wow-aboutUs #humaan-intro {
+  #wow-aboutUs #humaan-intro {
     padding: 40px 30px 0;
   }
-  .wow-aboutUs #humaan-intro p {
+  #wow-aboutUs #humaan-intro p {
     font-size: 16px;
     line-height: 28px;
   }
