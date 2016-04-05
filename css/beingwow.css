@@ -1,0 +1,291 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+/**********************************
+* Being WOW
+***********************************/
+.wow-beingWow {
+  padding: 0;
+}
+.wow-beingWow #being-wow {
+  border-top: 8px solid #2f3131;
+  border-bottom: 8px solid #2f3131;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  text-align: center;
+}
+.wow-beingWow #being-wow p.title {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #2f3131;
+  text-transform: uppercase;
+}
+.wow-beingWow #being-wow p.title strong {
+  font-weight: 500;
+}
+.wow-beingWow #being-wow #slider-wrap {
+  margin: 120px auto;
+  padding: 0 50px;
+  position: relative;
+  max-width: 1080px;
+}
+.wow-beingWow #being-wow #value-slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wow-beingWow #being-wow #value-slider article {
+  display: block;
+  margin: 0 auto;
+  min-height: 107px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.wow-beingWow #being-wow #value-slider article .wrap {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: auto;
+  margin: 0 auto;
+}
+.wow-beingWow #being-wow #value-slider article span {
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 80px;
+  line-height: 80px;
+  display: inline-block;
+  color: #2f3131;
+  position: absolute;
+  left: 0;
+  padding: 10px 0 0;
+}
+.wow-beingWow #being-wow #value-slider article div {
+  display: block;
+  border-left: 1px solid #426e86;
+  margin-left: 125px;
+  position: relative;
+  paddingn: 0 0 0 45px;
+  text-align: left;
+}
+.wow-beingWow #being-wow #value-slider article h4 {
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: italic;
+  color: #cf3721;
+  font-size: 70px;
+  line-height: 75px;
+  margin: 0;
+  display: block;
+}
+.wow-beingWow #being-wow #value-slider article p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #2f3131;
+  font-weight: 300;
+  margin: 0;
+}
+.wow-beingWow #being-wow .slider-right {
+  right: 0;
+  top: 25px;
+  position: absolute;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.wow-beingWow #being-wow .slider-left {
+  left: 0;
+  top: 25px;
+  position: absolute;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.wow-beingWow #being-wow .slider-right:hover,
+.wow-beingWow #being-wow .slider-left:hover {
+  opacity: 0.5;
+  filter: alpha 50;
+}
+.wow-beingWow #being-wow .pager {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-style: normal;
+  overflow: visible;
+}
+.wow-beingWow #being-wow .pager span {
+  font-size: 20px;
+  padding: 9px 16px 9px 18px;
+  margin: 0 5px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.wow-beingWow #being-wow .pager span a {
+  color: #426e86;
+  text-decoration: none;
+}
+.wow-beingWow #being-wow .pager span a:hover {
+  color: #cf3721;
+  text-decoration: none;
+}
+.wow-beingWow #being-wow .pager .cycle-pager-active {
+  border-radius: 50%;
+  border: 1px solid #cf3721;
+  color: #cf3721;
+}
+.wow-beingWow #being-wow .pager .cycle-pager-active a {
+  color: #cf3721;
+}
+.wow-beingWow #being-wow>p {
+  color: #426e86;
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 48.6px;
+}
+@media only screen and (max-width: 1215px) {
+  .wow-beingWow #being-wow .slider-left {
+    left: 20px;
+    top: 18px;
+  }
+  .wow-beingWow #being-wow .slider-right {
+    right: 20px;
+    top: 18px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .wow-beingWow #being-wow #value-slider article .wrap span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap div {
+    margin-left: 106px;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap h4 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap p {
+    font-size: 16px;
+    line-height: 25.92px;
+  }
+  .wow-beingWow #being-wow .slider-left {
+    left: 20px;
+  }
+  .wow-beingWow #being-wow .slider-right {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wow-beingWow #being-wow {
+    padding: 50px 0;
+  }
+  .wow-beingWow #being-wow #slider-wrap {
+    margin: 60px 0;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap span {
+    font-size: 60px;
+    line-height: 60px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap div {
+    margin-left: 0px;
+    padding: 10px 0 0;
+    border-left: 0;
+    text-align: center;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .wow-beingWow #being-wow #value-slider article .wrap p {
+    font-size: 16px;
+    line-height: 25.92px;
+  }
+  .wow-beingWow #being-wow .slider-left {
+    top: 50px;
+  }
+  .wow-beingWow #being-wow .slider-right {
+    top: 50px;
+  }
+  .wow-beingWow #being-wow>p {
+    padding: 0 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wow-beingWow #being-wow #slider-wrap {
+    padding: 0 30px;
+  }
+  .wow-beingWow #being-wow .pager span {
+    margin: 0;
+  }
+  .wow-beingWow .slider-left,
+  .wow-beingWow .slider-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wow-beingWow .inc.slider-left,
+  .wow-beingWow .nav-arrow.left {
+    background-position: -384px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+  .wow-beingWow .inc.slider-right,
+  .wow-beingWow .nav-arrow.right {
+    background-position: -448px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+}
+.icn {
+  display: block;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+}
+.icn span {
+  display: none;
+}
+.icn.slider-left,
+.nav-arrow.left {
+  background-position: -384px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}
+.icn.slider-right,
+.nav-arrow.right {
+  background-position: -448px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}

@@ -12,6 +12,13 @@ module.exports = function (grunt) {
                 options:{ 'compress': false },
                 files:{
                     'css/style.css' : 'css/style.styl',
+                    'css/header.css' : 'css/header.styl',
+                    'css/aboutus.css' : 'css/aboutus.styl',
+                    'css/whywedoit.css' : 'css/whywedoit.styl',
+                    'css/beingwow.css' : 'css/beingwow.styl',
+                    'css/howwework.css' : 'css/howwework.styl',
+                    'css/ourteamdna.css' : 'css/ourteamdna.styl',
+                    'css/ourclients.css' : 'css/ourclients.styl',
                 }
             }
         },
@@ -23,14 +30,22 @@ module.exports = function (grunt) {
         // Concatena hojas de estilo
         concat: {
             main: {
-                src:['css/style.css'],
+                src:['css/style.css',
+                'css/header.css',
+                'css/aboutus.css',
+                'css/whywedoit.css',
+                'css/beingwow.css' ,
+                'css/howwework.css',
+                'css/ourteamdna.css',
+                'css/ourclients.css' ],
                 dest:'css/style.full.css'
             }
         },
 
         // MInifica hojas de estilo
         cssmin: {
-            main: { src: 'css/style.full.css',    dest: 'css/style.min.css' }
+            main: { src: 'css/style.full.css',
+            dest: 'css/style.min.css' }
         },
 
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
@@ -38,7 +53,14 @@ module.exports = function (grunt) {
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
         watch: {
             stylus:{
-                files: ['css/style.styl'],
+                files: ['css/style.styl',
+                'css/header.styl',
+                'css/aboutus.styl',
+                'css/whywedoit.styl',
+                'css/beingwow.styl',
+                'css/howwework.styl',
+                'css/ourteamdna.styl',
+                'css/ourclients.styl' ],
                 tasks: ['stylus:compile','concat:main','cssmin:main']
             },
         },

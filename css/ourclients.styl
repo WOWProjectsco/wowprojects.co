@@ -1,0 +1,182 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+
+wow_green_olive = #4b7447 
+wow_white_bone = #F8F1E5 // white olive: #F8F1E5
+wow_black_coal = #2F3131
+wow_blue_steel = #426e86
+wow_red_tomato = #cf3721
+
+wow_font01 = NeueHaasBold, Helvetica, sans-serif
+wow_font02 = 'Tungsten A', 'Tungsten B'
+
+/**********************************
+* Being WOW
+***********************************/
+.wow-clients
+	.client-grid-area
+		text-align center
+		border-top: 8px solid wow_blue_steel;
+		border-bottom: 8px solid wow_blue_steel;
+		padding 60px 20px
+		h2
+			color wow_green_olive
+			font-family wow_font01
+			font-weight 400
+			font-style italic
+			padding 30px 15px 15px
+			font-size 16px
+			line-height 16px
+		.title
+			color wow_red_tomato
+			font-family wow_font01
+		.client-grid
+			.grid-entry
+				.logo
+					img
+						filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+						-webkit-filter: grayscale(100%);
+						-moz-filter: grayscale(100%);
+						-ms-filter: grayscale(100%);
+						-o-filter: grayscale(100%);
+						filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+						filter: Gray(); /* IE4-8 and 9 */
+						-webkit-transition: all 0.5s ease;
+						-moz-transition: all 0.5s ease;
+						-ms-transition: all 0.5s ease;
+						-o-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+					img:hover
+						filter none
+		.client-grid:after, .client-grid:before
+			content ""
+			display table
+		.client-grid:after
+			clear both
+
+@media (min-width:770px) {
+	.client-grid-area h2 {
+		padding:100px 25px 65px;
+		font-size:29px;
+		line-height:30px;
+		letter-spacing:-1px
+	}
+}
+.client-grid-area .client-grid .grid-entry {
+	display:block;
+	float:left;
+	width:50%;
+	height:39vw;
+	padding:15px;
+	background:wow_white_bone;
+	-webkit-transition:-webkit-transform .2s cubic-bezier(.175,.885,.32,1.275);
+	-moz-transition:-moz-transform .2s cubic-bezier(.175,.885,.32,1.275);
+	-o-transition:-o-transform .2s cubic-bezier(.175,.885,.32,1.275);
+	transition:transform .2s cubic-bezier(.175,.885,.32,1.275)
+}
+
+.client-grid-area .client-grid .grid-entry:hover {
+	-webkit-transform:scale(.95);
+	-moz-transform:scale(.95);
+	-ms-transform:scale(.95);
+	-o-transform:scale(.95);
+	transform:scale(.95)
+}
+.client-grid-area .client-grid .grid-entry .logo {
+	display:block;
+	position:relative;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+	text-align:center;
+	color:#333
+}
+.client-grid-area .client-grid .grid-entry .client-logo {
+	width:60%;
+	height:auto;
+	margin:0 auto;
+	display:block
+}
+
+@media (min-width:770px) {
+	.client-grid-area .client-grid .grid-entry {
+		width:25%;
+		height:180px
+	}
+}
+
+.client-grid-area .contact-cta {
+	text-align:center;
+	margin-bottom:100px;
+	opacity:0;
+	transform:translateY(40px);
+	transition:all 400ms cubic-bezier(.05,.48,.205,1.175) 200ms
+}
+.client-grid-area .contact-cta.inviewtop {
+	transform:translateY(0);
+	opacity:1
+}
+.client-grid-area .contact-cta.inviewtop .gradient-mask-text {
+	-webkit-animation-name:gradient-wave;
+	-moz-animation-name:gradient-wave;
+	animation-name:gradient-wave
+}
+.client-grid-area .contact-cta.inviewtop .contact-cta-wave {
+	-webkit-animation-name:wave;
+	-moz-animation-name:wave;
+	animation-name:wave
+}
+.client-grid-area .contact-cta .pssst {
+	display:block;
+	margin:10px auto
+}
+.client-grid-area .contact-cta p {
+	margin-left:auto;
+	margin-right:auto;
+	font-family:'Sentinel SSm A','Sentinel SSm B';
+	font-style:italic;
+	font-weight:300;
+	font-size:17px;
+	color:#6C6C6C;
+	line-height:1.25;
+	letter-spacing:-1px;
+	max-width:900px
+}
+.client-grid-area .contact-cta p em {
+	font-weight:700
+}
+.client-grid-area .contact-cta a {
+	min-width:180px;
+	transition:all 300ms
+}
+.client-grid-area .contact-cta a:hover {
+	background-color:#f26f70;
+	color:#fff
+}
+@media (min-width:770px) {
+	.client-grid-area .contact-cta p {
+		font-size:24px
+	}
+}

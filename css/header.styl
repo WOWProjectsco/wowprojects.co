@@ -1,0 +1,405 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+
+wow_green_olive = #4b7447 
+wow_white_bone = #F8F1E5 // white olive: #F8F1E5
+wow_black_coal = #2F3131
+wow_blue_steel = #426e86
+wow_red_tomato = #cf3721
+
+wow_font01 = NeueHaasBold, Helvetica, sans-serif
+wow_font02 = 'Tungsten A', 'Tungsten B'
+
+
+/**********************************
+* Navigation
+***********************************/
+#wow-header
+	.padded
+		padding 3em	
+	nav
+		margin 0
+		padding 0
+		border 0
+		vertical-align baseline
+		display block
+		position relative
+		overflow hidden
+		font-size 100%
+
+		z-index 997
+		position absolute
+		top 0
+		right 0
+		left 0
+		width 100%
+		pointer-events none
+		a
+			pointer-events auto
+	nav.sticky
+		pointer-events auto
+		background wow_white_bone
+		position fixed
+		padding-top 1.5em
+		padding-bottom .8em
+		-webkit-transform translate(0, -100%)
+		-moz-transform translate(0, -100%)
+		-ms-transform translate(0, -100%)
+		-o-transform translate(0, -100%)
+		transform translate(0, -100%)
+	nav.sticky.animate
+		-webkit-transition -webkit-transform .2s
+		-moz-transition -moz-transform .2s
+		transition transform .2s
+	nav.sticky.revealed
+		-webkit-transform translate(0, 0)
+		-moz-transform translate(0, 0)
+		-ms-transform translate(0, 0)
+		-o-transform translate(0, 0)
+		transform translate(0, 0)
+	#mobile-menu-button, #nclud-logo
+		z-index 998
+	#nclud-logo
+		width 3.3em
+		position relative
+		float left
+	#site-nav
+		li
+			display block
+			float right
+			margin-right 1em
+			width 12em
+			a
+				pointer-events auto
+				display block
+				text-align right
+				position relative
+				padding .4em .75em .5em
+				margin-top -.8em
+				overflow hidden
+				border 2px solid transparent
+				.data-number
+					display block
+					text-align left
+					border-bottom 2px solid wow_white_bone
+					padding-bottom .2em
+					margin-bottom .25em
+			a:active, a:hover
+				border-color wow_green_olive
+			a:active:after, a:hover:after
+				position absolute
+				width 120%
+				height 2px
+				background wow_green_olive
+				left 51%
+				top 50%
+				-webkit-transform translateX(-50%) rotate(23deg)
+				-moz-transform translateX(-50%) rotate(23deg)
+				-ms-transform translateX(-50%) rotate(23deg)
+				-o-transform translateX(-50%) rotate(23deg)
+				transform translateX(-50%) rotate(23deg)
+				content ''
+			a.hidden
+				opacity 0
+				visibility hidden
+				pointer-events none
+		li:last-child
+			margin-right 0
+		a
+			font-family wow_font01
+			font-weight 400
+			color wow_white_bone
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-decoration: none;
+			font-size: .85em;
+			white-space: nowrap
+			.data-number
+				font-size 2.25em	
+	.four-oh-four #site-nav, #four-oh-four .home-link
+		display none
+	#mobile-menu-button 
+		display none
+
+
+	/**********************************
+	* Header
+	***********************************/
+	header
+		background-size cover
+		background-color center center
+		overflow visible
+		
+	.height-95
+		min-height 95vh
+		
+	.black
+		background-color wow_black_coal
+
+	.grid_row
+		width 100%
+		overflow visible
+		
+	.grid_row:after
+		clear both
+		display table
+		content: ''
+
+	.padded-horizontal
+		padding-left 3em
+		padding-right 3em
+
+	.header-text {
+	    position: absolute;
+	    top: 58%;
+	    top: -moz-calc(50% + 3em);
+	    top: -o-calc(50% + 3em);
+	    top: -webkit-calc(50% + 3em);
+	    top: calc(50% + 3em);
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    -webkit-transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    transform: translateY(-50%);
+	    pointer-events: none;
+	    z-index 10;
+	}
+
+	.grid2
+		float: left;
+		width: 64%;
+		width: -moz-calc(((100% / 3) * 2) - 25px);
+		width: -o-calc(((100% / 3) * 2) - 25px);
+		width: -webkit-calc(((100% / 3) * 2) - 25px);
+		width: calc(((100% / 3) * 2) - 25px);
+		.half
+			float left
+			width 50%
+			width: -moz-calc(50% - 25px);
+			width: -o-calc(50% - 25px);
+			width: -webkit-calc(50% - 25px);
+			width: calc(50% - 25px);
+			margin-right: 50px
+		.half:nth-of-type(2n)
+			margin-right 0
+	.grid3
+		clear both
+		width 100%
+
+	.grid1, grid2
+		margin-right 50px
+		overflow visible
+
+	h1:last-child, h1:only-child, h2:last-child, h2:only-child, h4:last-child, h4:only-child, h6:last-child, h6:only-child, p:last-child, p:only-child
+		margin-bottom 0
+
+	#canvas
+		position absolute
+		top 50%
+		left 50%
+		-webkit-transform translate(-50%,-50%)
+		-moz-transform translate(-50%,-50%)
+		-ms-transform translate(-50%,-50%)
+		-o-transform translate(-50%,-50%)
+		transform translate(-50%,-50%)
+		min-width 100%
+		canvas
+			position absolute
+			top 0
+			rigth 0
+			bottom 0
+			left 0
+			width 100%
+			height 100%
+			opacity 1
+
+	#webgl
+		-webkit-transition opacity .125s
+		-moz-transition opacity .125s
+		transition opacity .125s
+		.initial-hidden
+			opacity 0
+			pointer-events none
+
+	.header-number .data-number
+		pointer-events none
+		font-family wow_font01
+		-webkit-font-smoothing antialiased
+		-moz-osx-font-smoothing grayscale
+		color wow_red_tomato	
+		letter-spacing -.025em
+		font-size 20vw
+		position absolute
+		right 3vw
+		bottom 10.5vh
+	.header-number.eliza .data-number
+		color wow_white_bone
+
+    // Small screens
+@media only screen and (max-width:641px)
+	#wow-header
+		.padded
+			padding 25px
+		.padded-horizontal
+			padding-left 25px
+			padding-right 25px
+		nav.sticky
+			padding-bottom 1.5em
+		nav
+			overflow visible
+			pointer-events auto
+		#site-nav
+			overflow visible
+			pointer-events auto
+			display none
+			float none
+			position fixed
+			top 0
+			right 0
+			lert 0
+			width 100%
+			height 150%
+			background: wow_red_tomato
+			li
+				overflow visible
+				float none
+				width 100%
+				margin-right 0
+				position absolute
+				top 35%
+				left 0
+				padding 0 25px
+				a
+					overflow visible
+					text-align left
+					margin-top 0
+					padding 0
+					.data-number
+						display inline
+						border 0
+					.data-number:after
+						content "\00a0\00a0 / \00a0"
+				a:active, a:hover
+					border-color: transparent
+				a:active:after, a:hover:after
+					left 0
+					height 4px
+					width 105%
+					-webkit-transform: translateX(-2.5%) translateY(-50%) rotate(0);
+					-moz-transform: translateX(-2.5%) translateY(-50%) rotate(0);
+					-ms-transform: translateX(-2.5%) translateY(-50%) rotate(0);
+					-o-transform: translateX(-2.5%) translateY(-50%) rotate(0);
+					transform: translateX(-2.5%) translateY(-50%) rotate(0)
+				a.hidden
+					opacity 1
+					visibility visible
+					pointer-events auto
+			li:first-child
+				-webkit-transform: translateY(-200%);
+				-moz-transform: translateY(-200%);
+				-ms-transform: translateY(-200%);
+				-o-transform: translateY(-200%);
+				transform: translateY(-200%)
+			li:nth-child(2)
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%)
+			li:last-child
+				-webkit-transform: translateY(100%);
+				-moz-transform: translateY(100%);
+				-ms-transform: translateY(100%);
+				-o-transform: translateY(100%);
+				transform: translateY(100%);
+			a
+				font-size 2.3em
+				.data-number
+					font-size 1em
+		#site-nav.mobile-active
+			display block
+		#mobile-menu-button
+			display block
+			width 32px
+			height 26px
+			background 0 0
+			cursor pointer
+			border-top 4px solid wow_white_bone
+			border-bottom 4px solid wow_white_bone
+			position absolute
+			top 32px
+			right 25px
+		#mobile-menu-button:after, #mobile-menu-button:before
+			display block
+			position absolute
+			top 50%
+			left 50%
+			width 100%
+			height 4px
+			background wow_white_bone
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			-moz-transform: translate3d(-50%, -50%, 0);
+			-ms-transform: translate3d(-50%, -50%, 0);
+			-o-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+			content: ''
+		.sticky #mobile-menu-button
+			top 24px
+		#mobile-menu-button.mobile-active
+			border-color transparent
+		#mobile-menu-button.mobile-active:before
+			-webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+			-moz-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+			-ms-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+			-o-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+			transform: translate3d(-50%, -50%, 0) rotate(45deg)
+		#mobile-menu-button.mobile-active:after
+			-webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+			-moz-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+			-ms-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+			-o-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+			transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+		.case-study-head
+			.header-text
+				top 45%
+		.grid2
+			.half
+				width 100%
+				margin-right  0
+				margin-bottom 22px
+		.grid1, .grid2, .grid3
+			width 100%
+			margin-bottom 22px
+			margin-right 0
+		.grid1, .grid2
+			margin-right 50px
+			overflow visible
+			
+		.grid1:last-child, .grid2:last-child
+			margin-right 0
+			margin-bottom 0
+		

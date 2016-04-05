@@ -1,0 +1,115 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+
+wow_green_olive = #4b7447 
+wow_white_bone = #F8F1E5 // white olive: #F8F1E5
+wow_black_coal = #2F3131
+wow_blue_steel = #426e86
+wow_red_tomato = #cf3721
+
+wow_font01 = NeueHaasBold, Helvetica, sans-serif
+wow_font02 = 'Tungsten A', 'Tungsten B'
+
+/**********************************
+* Being WOW
+***********************************/
+.wow-howWeWork
+	.how-we-do
+		padding 50px 25px
+	section
+		display block
+	.how-we-do
+		h2
+			max-width 800px
+			margin 0px auto
+			text-transform uppercase
+			color wow_red_tomato
+			text-align left
+			line-height 16px
+			font-family wow_font01
+			font-style normal
+			font-weight 700
+			margin-bottom 1em
+			font-size 15px
+		.copy
+			font-size 17px
+			letter-spacing -0.75px
+			line-height 27px
+			font-family wow_font02
+			font-style normal
+			font-weight 300
+			color wow_black_coal
+			max-width 800px
+			margin 0px auto
+			em
+				letter-spacing -2px
+		.shout-out
+			margin 45px auto
+			border medium none !important
+			font-family wow_font01
+			font-style normal
+			font-weight 400
+			font-size 36px
+			text-align center
+			line-height 1em
+			letter-spacing -1px
+			position relative
+			padding 20px 0px 25px
+		.shout-out:after, .shout-out:before
+			display block
+			content ''
+			position absolute
+			left 50%
+			width 220px
+			margin-left -110px
+			height 1px
+			background wow_green_olive !important
+		.shout-out:after
+			bottom 0
+		.shout-out:before
+			top 0
+		blockquote.shout-out:after, blockquote.shout-out:before
+			backgroud wow_blue_steel
+								
+@media (min-width:770px)
+	.wow-howWeWork
+		.how-we-do
+			padding 66px 25px 0
+			h2
+				letter-spacing 7.93px
+				font-size 17px
+			.copy
+				font-size 24px
+				letter-spacing -1px
+				line-height 36px
+				font-weight 400
+			.shout-out
+				font-size 4em
+				letter-spacing -2px
+				padding 45px 0px 55px
+				margin 90px auto
+			.shout-out:after, .shout-out:before
+				width 400px
+				left 50%
+				margin-left -200px

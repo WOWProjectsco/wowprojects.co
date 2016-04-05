@@ -1,0 +1,120 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+/**********************************
+* Being WOW
+***********************************/
+.wow-howWeWork .how-we-do {
+  padding: 50px 25px;
+}
+.wow-howWeWork section {
+  display: block;
+}
+.wow-howWeWork .how-we-do h2 {
+  max-width: 800px;
+  margin: 0px auto;
+  text-transform: uppercase;
+  color: #cf3721;
+  text-align: left;
+  line-height: 16px;
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1em;
+  font-size: 15px;
+}
+.wow-howWeWork .how-we-do .copy {
+  font-size: 17px;
+  letter-spacing: -0.75px;
+  line-height: 27px;
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-style: normal;
+  font-weight: 300;
+  color: #2f3131;
+  max-width: 800px;
+  margin: 0px auto;
+}
+.wow-howWeWork .how-we-do .copy em {
+  letter-spacing: -2px;
+}
+.wow-howWeWork .how-we-do .shout-out {
+  margin: 45px auto;
+  border: medium none !important;
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1em;
+  letter-spacing: -1px;
+  position: relative;
+  padding: 20px 0px 25px;
+}
+.wow-howWeWork .how-we-do .shout-out:after,
+.wow-howWeWork .how-we-do .shout-out:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 220px;
+  margin-left: -110px;
+  height: 1px;
+  background: #4b7447 !important;
+}
+.wow-howWeWork .how-we-do .shout-out:after {
+  bottom: 0;
+}
+.wow-howWeWork .how-we-do .shout-out:before {
+  top: 0;
+}
+.wow-howWeWork .how-we-do blockquote.shout-out:after,
+.wow-howWeWork .how-we-do blockquote.shout-out:before {
+  backgroud: #426e86;
+}
+@media (min-width: 770px) {
+  .wow-howWeWork .how-we-do {
+    padding: 66px 25px 0;
+  }
+  .wow-howWeWork .how-we-do h2 {
+    letter-spacing: 7.93px;
+    font-size: 17px;
+  }
+  .wow-howWeWork .how-we-do .copy {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+  .wow-howWeWork .how-we-do .shout-out {
+    font-size: 4em;
+    letter-spacing: -2px;
+    padding: 45px 0px 55px;
+    margin: 90px auto;
+  }
+  .wow-howWeWork .how-we-do .shout-out:after,
+  .wow-howWeWork .how-we-do .shout-out:before {
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+  }
+}
