@@ -42,6 +42,7 @@
 .wow-clients .client-grid-area .title {
   color: #cf3721;
   font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-size: 50px;
 }
 .wow-clients .client-grid-area .client-grid .grid-entry .logo img {
   filter: url("#grayscale"); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
@@ -59,6 +60,10 @@
 }
 .wow-clients .client-grid-area .client-grid .grid-entry .logo img:hover {
   filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
 }
 .wow-clients .client-grid-area .client-grid:after,
 .wow-clients .client-grid-area .client-grid:before {
