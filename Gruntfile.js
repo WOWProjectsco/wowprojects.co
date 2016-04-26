@@ -19,6 +19,7 @@ module.exports = function (grunt) {
                     'css/howwework.css' : 'css/howwework.styl',
                     'css/ourteamdna.css' : 'css/ourteamdna.styl',
                     'css/ourclients.css' : 'css/ourclients.styl',
+                    'css/ourteam.css' : 'css/ourteam.styl',
                 }
             }
         },
@@ -37,7 +38,8 @@ module.exports = function (grunt) {
                 'css/beingwow.css' ,
                 'css/howwework.css',
                 'css/ourteamdna.css',
-                'css/ourclients.css' ],
+                'css/ourclients.css',
+                'css/ourteam.css' ],
                 dest:'css/style.full.css'
             }
         },
@@ -60,7 +62,8 @@ module.exports = function (grunt) {
                 'css/beingwow.styl',
                 'css/howwework.styl',
                 'css/ourteamdna.styl',
-                'css/ourclients.styl' ],
+                'css/ourclients.styl',
+                'css/ourteam.styl' ],
                 tasks: ['stylus:compile','concat:main','cssmin:main']
             },
         },

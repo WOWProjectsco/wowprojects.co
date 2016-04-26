@@ -25,7 +25,9 @@
 * About Us Section
 ***********************************/
 #wow-aboutUs {
-  padding: 17px 0 0;
+  padding: 0 0 65px 0;
+  border-top: 8px solid #2f3131;
+  border-bottom: 8px solid #2f3131;
 }
 #wow-aboutUs #banner {
   display: block;
@@ -121,6 +123,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  #wow-aboutUs #banner {
+    padding-top: 0;
+  }
   #wow-aboutUs #banner h1 {
     font-size: 30px;
     line-height: 40px;

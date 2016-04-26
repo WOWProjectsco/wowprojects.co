@@ -26,8 +26,10 @@
 ***********************************/
 .wow-ourTeamDNA .structured-scalability {
   padding: 50px 25px;
+  border-top: 8px solid #2f3131;
+  border-bottom: 8px solid #2f3131;
 }
-.wow-ourTeamDNA .structured-scalability h2 {
+h2 {
   max-width: 800px;
   margin: 0px auto;
   text-transform: uppercase;
@@ -40,7 +42,7 @@
   margin-bottom: 1em;
   font-size: 15px;
 }
-.wow-ourTeamDNA .structured-scalability .copy {
+.copy {
   font-size: 17px;
   letter-spacing: -0.75px;
   line-height: 27px;
@@ -51,7 +53,7 @@
   max-width: 800px;
   margin: 0px auto;
 }
-.wow-ourTeamDNA .structured-scalability .copy em {
+.copy em {
   letter-spacing: -2px;
 }
 @media (min-width: 770px) {

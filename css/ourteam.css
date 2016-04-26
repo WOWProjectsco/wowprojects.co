@@ -1,0 +1,212 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+/**********************************
+* Being WOW
+***********************************/
+.wow-teamwow {
+  padding: 0;
+}
+.wow-teamwow #teamwow {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  text-align: center;
+}
+.wow-teamwow #teamwow p.title {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  color: #cf3721;
+  text-transform: uppercase;
+}
+.wow-teamwow #teamwow p.title strong {
+  font-weight: 500;
+}
+.wow-teamwow #teamwow .team .member {
+  margin-bottom: 95px;
+  padding-right: 0;
+}
+.wow-teamwow #teamwow .team .member .details {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2f3131;
+  height: 120px;
+}
+.wow-teamwow #teamwow .team .member .details .name {
+  font-size: 21px;
+  font-weight: 900;
+  font-style: italic;
+  color: #4b7447;
+  margin: 21px 0;
+}
+.wow-teamwow #teamwow .team .member .details .job {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #4b7447;
+  margin: 0;
+}
+.wow-teamwow #teamwow .team .member .social {
+  margin-top: 25px;
+}
+.wow-teamwow #teamwow .team .member .social a {
+  display: inline-block;
+  margin-right: 4px;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 2px;
+  background: #dddedf;
+  color: #b3b3b4;
+  padding-top: 8px;
+}
+.wow-teamwow #teamwow .team .member .social a i {
+  font-size: 16px;
+}
+.wow-teamwow #teamwow .team .member .social a:hover {
+  color: #fff;
+}
+.wow-teamwow #teamwow .team .member .social a.linkedin:hover {
+  background: #007bb6;
+}
+.wow-teamwow #teamwow .team .member .social a.url:hover {
+  background: #000;
+}
+.wow-teamwow #teamwow .team .member .social a.facebook:hover {
+  background: #3554a2;
+}
+.wow-teamwow #teamwow .team .member .social a.twitter:hover {
+  background: #5fc4fe;
+}
+.wow-teamwow #teamwow .team .member .social a.instagram:hover {
+  background: #517fa4;
+}
+.wow-teamwow #teamwow .team .member .image img {
+  width: 100%;
+}
+.wow-teamwow #teamwow>p {
+  color: #426e86;
+  font-family: NeueHaasBold, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 48.6px;
+}
+@media only screen and (max-width: 1215px) {
+  .wow-teamwow #teamwow .slider-left {
+    left: 20px;
+    top: 18px;
+  }
+  .wow-teamwow #teamwow .slider-right {
+    right: 20px;
+    top: 18px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .wow-teamwow #teamwow #value-slider article .wrap span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .wow-teamwow #teamwow #value-slider article .wrap div {
+    margin-left: 106px;
+  }
+  .wow-teamwow #teamwow #value-slider article .wrap h4 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .wow-teamwow #teamwow #value-slider article .wrap p {
+    font-size: 16px;
+    line-height: 25.92px;
+  }
+  .wow-teamwow #teamwow .slider-left {
+    left: 20px;
+  }
+  .wow-teamwow #teamwow .slider-right {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wow-teamwow #teamwow {
+    padding: 50px 0;
+  }
+  .wow-teamwow #teamwow .team .member {
+    padding-right: 15px;
+  }
+  .wow-teamwow #being-wow>p {
+    padding: 0 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wow-teamwow #teamwow #slider-wrap {
+    padding: 0 30px;
+  }
+  .wow-teamwow #teamwow .pager span {
+    margin: 0;
+  }
+  .wow-teamwow .slider-left,
+  .wow-teamwow .slider-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wow-teamwow .inc.slider-left,
+  .wow-teamwow .nav-arrow.left {
+    background-position: -384px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+  .wow-teamwow .inc.slider-right,
+  .wow-teamwow .nav-arrow.right {
+    background-position: -448px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+}
+.icn {
+  display: block;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+}
+.icn span {
+  display: none;
+}
+.icn.slider-left,
+.nav-arrow.left {
+  background-position: -384px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}
+.icn.slider-right,
+.nav-arrow.right {
+  background-position: -448px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}

@@ -93,7 +93,7 @@
 }
 @media (min-width: 770px) {
   .wow-howWeWork .how-we-do {
-    padding: 66px 25px 0;
+    padding: 66px 25px;
   }
   .wow-howWeWork .how-we-do h2 {
     letter-spacing: 7.93px;
