@@ -22,7 +22,7 @@
  * @link     http://wowprojects.co
  */
 
-wow_green_olive = #4b7447 
+wow_green_olive = #4b7447
 wow_white_bone = #F8F1E5 // white olive: #F8F1E5
 wow_black_coal = #2F3131
 wow_blue_steel = #426e86
@@ -37,7 +37,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 ***********************************/
 #wow-header
 	.padded
-		padding 3em	
+		padding 3em
 	nav
 		margin 0
 		padding 0
@@ -136,10 +136,10 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 			font-size: .85em;
 			white-space: nowrap
 			.data-number
-				font-size 2.25em	
+				font-size 2.25em
 	.four-oh-four #site-nav, #four-oh-four .home-link
 		display none
-	#mobile-menu-button 
+	#mobile-menu-button
 		display none
 
 
@@ -150,7 +150,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		background-size cover
 		background-color center center
 		overflow visible
-		
+
 	.height-95
 		min-height 95vh
 	.height-100
@@ -161,7 +161,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 	.grid_row
 		width 100%
 		overflow visible
-		
+
 	.grid_row:after
 		clear both
 		display table
@@ -251,7 +251,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		font-family wow_font01
 		-webkit-font-smoothing antialiased
 		-moz-osx-font-smoothing grayscale
-		color wow_red_tomato	
+		color wow_red_tomato
 		letter-spacing -.025em
 		font-size 20vw
 		position absolute
@@ -263,6 +263,8 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
     // Small screens
 @media only screen and (max-width:641px)
 	#wow-header
+		h1
+			font-size 4.25em
 		.padded
 			padding 25px
 		.padded-horizontal
@@ -399,8 +401,12 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		.grid1, .grid2
 			margin-right 50px
 			overflow visible
-			
+
 		.grid1:last-child, .grid2:last-child
 			margin-right 0
 			margin-bottom 0
-		
+
+@media only screen and (max-width:400px)
+	#wow-header
+		h1
+			font-size 3.8em

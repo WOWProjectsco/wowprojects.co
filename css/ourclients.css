@@ -41,8 +41,12 @@
 }
 .wow-clients .client-grid-area .title {
   color: #cf3721;
-  font-family: NeueHaasBold, Helvetica, sans-serif;
-  font-size: 50px;
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 30px;
 }
 .wow-clients .client-grid-area .client-grid .grid-entry .logo img {
   filter: url("#grayscale"); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */

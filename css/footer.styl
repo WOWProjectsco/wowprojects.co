@@ -1,0 +1,162 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+
+wow_green_olive = #4b7447
+wow_white_bone = #F8F1E5 // white olive: #F8F1E5
+wow_black_coal = #2F3131
+wow_blue_steel = #426e86
+wow_red_tomato = #cf3721
+
+wow_white_bone_75 = rgba(248,241,229, 0.75)
+wow_white_bone_65 = rgba(248,241,229, 0.65)
+
+wow_font01 = NeueHaasBold, Helvetica, sans-serif
+wow_font02 = 'Tungsten A', 'Tungsten B'
+
+
+
+/**********************************
+* About Us Section
+***********************************/
+#wow-aboutUs
+	padding 0 0 65px 0
+	border-top 8px solid wow_black_coal
+	border-bottom 8px solid wow_black_coal
+	#banner
+		display block
+		position relative
+		text-align center
+		width 100%
+		height 640px
+		background-position center
+		background-size cover
+		padding-top 170px
+		h1
+			font-family wow_font01
+			font-style italic
+			font-size 50px
+			line-height 81px
+			color wow_red_tomato
+			margin 0 0 15px
+			font-weight normal
+		h2
+			font-size 22px
+			line-height 40px
+			max-width 800px
+			margin 0 auto
+			color wow_black_coal
+	#humaan-intro
+		max-width 940px
+		margin 0 auto
+		padding 80px 40px 0
+		-moz-column-count 2
+		-moz-column-gap 50px
+		-webkit-column-count 2
+		-webkit-column-gap 50px
+		-webkit-column-count 2
+		-moz-column-count 2
+		column-count 2
+		-webkit-column-gap 50px
+		-moz-column-gap 50px
+		column-gap 50px
+		p
+			font-size 19px
+			line-height 32px
+			font-weight 300
+			margin-bottom 29px
+
+@media only screen and (max-width: 980px)
+	#wow-aboutUs
+		#banner
+			h1
+				font-size 40px
+				line-height 64.8px
+			h2
+				padding 0 20px
+				font-size 20px
+				line-height  36px
+
+@media only screen and (max-width: 767px)
+	#wow-aboutUs
+		#banner
+			height 250px
+			padding-top 50px
+			h1, h2
+				z-index 2
+				position relative
+			h2
+				font-size 16px
+				line-height 30px
+		#banner:before
+			content ""
+			display block
+			width 100%
+			height 100%
+			background wow_white_bone_65
+			position absolute
+			top 0
+			left 0
+			z-index 1
+		#humaan-intro
+			-moz-column-count 1
+			-webkit-column-count 1
+			column-count 1
+			p
+				font-size 18px
+				line-height 30px
+
+@media only screen and (max-width: 600px)
+	#wow-aboutUs
+		#banner
+			padding-top 0
+			h1
+				font-size 30px
+				line-height 40px
+				margin-top 20px
+			h2
+				font-size 15px
+			br
+				display none
+		#humaan-intro
+			padding 40px 30px 0
+			p
+				font-size 16px
+				line-height 28px
+
+@media only screen and (max-width: 500px)
+	#wow-aboutUs
+		#banner
+			h1
+				font-size 28px
+			h2
+				font-size 14px
+@media only screen and (max-width: 400px)
+	#wow-aboutUs
+		#banner
+			h1
+				font-size 26px
+			h2
+				font-size 13px
+
+
