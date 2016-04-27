@@ -171,25 +171,34 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		padding-left 3em
 		padding-right 3em
 
-	.header-text {
-	    position: absolute;
-	    top: 58%;
-	    top: -moz-calc(50% + 3em);
-	    top: -o-calc(50% + 3em);
-	    top: -webkit-calc(50% + 3em);
-	    top: calc(50% + 3em);
-	    left: 0;
-	    right: 0;
-	    width: 100%;
-	    -webkit-transform: translateY(-50%);
-	    -moz-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	    -o-transform: translateY(-50%);
-	    transform: translateY(-50%);
-	    pointer-events: none;
-	    z-index 10;
-	}
-
+	.header-text
+		position absolute
+		top 58%
+		top -moz-calc(50% + 3em)
+		top -o-calc(50% + 3em)
+		top -webkit-calc(50% + 3em)
+		top calc(50% + 3em)
+		left 0
+		right 0
+		width 100%
+		-webkit-transform translateY(-50%)
+		-moz-transform translateY(-50%)
+		-ms-transform translateY(-50%)
+		-o-transform translateY(-50%)
+		transform translateY(-50%)
+		pointer-events none
+		z-index 10
+		h1
+			color wow_white_bone
+		h2
+			color wow_red_tomato
+			padding 15px 0
+			font-size 1.4em
+			background rgba(0, 0, 0, 0.62)
+			background -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(0,0,0,0)) /*Safari 5.1-6*/
+			background -o-linear-gradient(right,rgba(0,0,0,1),rgba(0,0,0,0)) /*Opera 11.1-12*/
+			background -moz-linear-gradient(right,rgba(0,0,0,1),rgba(0,0,0,0)) /*Fx 3.6-15*/
+			background linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)) /*Standard*/
 	.grid2
 		float: left;
 		width: 64%;
@@ -265,6 +274,10 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 	#wow-header
 		h1
 			font-size 4.25em
+			margin-bottom 10px
+		.header-text
+			h2
+				font-size 1.3em
 		.padded
 			padding 25px
 		.padded-horizontal
@@ -410,3 +423,6 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 	#wow-header
 		h1
 			font-size 3.8em
+			.-header-text
+				h2
+					font-size 1em
