@@ -11,23 +11,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script>
-  function selectStep(n) {
-    if(n==1) {
-      $(".progress-selected").animate({marginLeft:'2px'}, 300);
-    } else if (n==2) {
-      $(".progress-selected").animate({marginLeft:'132px'}, 300);
-    } else if (n==3) {
-      $(".progress-selected").animate({marginLeft:'262px'}, 300);
-    } else if (n==4) {
-      $(".progress-selected").animate({marginLeft:'262px'}, 300);
-    } else if (n==5) {
-      $(".progress-selected").animate({marginLeft:'262px'}, 300);
-    }
-    $(".content-switcher").hide();
-    $(".content"+n).show();
-  }
-  </script>
+  <script type="text/javascript" src="js/beingWowSlider.js"></script>
 
   <title>WOWProjects</title>
 
@@ -105,8 +89,8 @@
           <p class="title">Being <strong>WOW</strong></p>
           <p>Our values &amp; the key to great relationships</p>
           <div id="slider-wrap">
-              <a class="icn slider-left" href="#"><span>&lt;</span></a>
-            <a class="icn slider-right" href="#"><span>&gt;</span></a>
+            <a class="icn slider-left" onclick="preValue(); return false;" href="#"><span>&lt;</span></a>
+            <a class="icn slider-right" href="#" onclick="nextValue(); return false;"><span>&gt;</span></a>
 
             <div id="value-slider" class="main-content cycle-slideshow">
               <article class="content-switcher content1">
