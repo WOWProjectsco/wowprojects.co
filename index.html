@@ -54,7 +54,11 @@
     }
 
     $(function(){
-     var navMain = $(".navbar-collapse");
+     var navMain = $("#nav-main");
+     var navSubMenu = $("#bs-example-navbar-collapse-1");
+     navSubMenu.on("click", "a", null, function () {
+         navSubMenu.collapse('hide');
+     });
      navMain.on("click", "a", null, function () {
          navMain.collapse('hide');
      });
@@ -79,7 +83,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img alt="brand" src="img/logo">
+              <img alt="brand" src="img/wow-logo_200x138.png">
             </a>
           </div>
 
