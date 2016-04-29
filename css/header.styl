@@ -36,6 +36,14 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 * Navigation
 **********************************/
 #wow-header
+	.navbar
+		background rgba(0, 0, 0, 0.62)
+		background -webkit-linear-gradient(right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.97) 40%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 58%,rgba(19,19,19,1) 100%) /* Chrome10-25,Safari5.1-6 */
+		background -o-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,1)) /*Opera 11.1-12*/
+		background -moz-linear-gradient(right,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0.97) 40%, rgba(0,0,0,1) 52%, rgba(0,0,0,1) 58%, rgba(19,19,19,1) 100%) /* FF3.6-15 */
+		background linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.97) 40%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 58%,rgba(19,19,19,1) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		.container-fluid
+			padding-top 15px
 	.padded
 		padding 3em
 	nav
@@ -56,6 +64,8 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		pointer-events none
 		a
 			pointer-events auto
+	.nav-up
+		top: -77px
 	nav.sticky
 		pointer-events auto
 		background wow_white_bone
@@ -83,12 +93,12 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		width 3.3em
 		position relative
 		float left
-	#site-nav
+	.navbar-default
 		li
 			display block
 			float right
 			margin-right 1em
-			width 12em
+			width 9em
 			a
 				pointer-events auto
 				display block
@@ -266,6 +276,26 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		bottom 10.5vh
 	.header-number.eliza .data-number
 		color wow_white_bone
+
+@media only screen and (max-width:900px)
+	#wow-header
+		.navbar-default
+			li
+				width 7em
+			a
+				padding 0.4em 0
+				font-size 0.7em
+				.data-number
+					font-size 2em
+
+
+@media only screen and (max-width:767px)
+	#wow-header
+		nav
+			pointer-events auto
+		.navbar-default
+			.navbar-collapse
+				background-color wow_black_coal
 
     // Small screens
 @media only screen and (max-width:641px)
