@@ -10,60 +10,14 @@
 
 
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/typed.min.js"></script>
   <script type="text/javascript" src="js/beingWowSlider.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.navbar-default').outerHeight();
 
-    $(window).scroll(function(event){
-        didScroll = true;
-    });
-
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down
-            $('.navbar-default').removeClass('nav-down').addClass('nav-up');
-        } else {
-            // Scroll Up
-            if(st + $(window).height() < $(document).height()) {
-                $('.navbar-default').removeClass('nav-up').addClass('nav-down');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-
-    $(function(){
-     var navMain = $("#nav-main");
-     var navSubMenu = $("#bs-example-navbar-collapse-1");
-     navSubMenu.on("click", "a", null, function () {
-         navSubMenu.collapse('hide');
-     });
-     navMain.on("click", "a", null, function () {
-         navMain.collapse('hide');
-     });
-    });
-  </script>
+  <script type="text/javascript" src="js/mainWOW.js"></script>
   <title>WOWProjects</title>
 
 </head>
@@ -106,7 +60,8 @@
       <header class="eliza height-100 black back-block-green-bottom-right" style="background-image: url('img/header-home.jpg');">
         <div class="header-text grid_row padded-horizontal">
           <h1 class="grid3">We are WOWProjects.</h1>
-          <h2 class="grid2">Showcasing your impact to the world!</h2>
+          <h2 class="grid2 slogan">Showcasing your impact to the world!</h2>
+        </div>
         </div>
       </header>
     </section>
