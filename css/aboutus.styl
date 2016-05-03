@@ -52,14 +52,14 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		background-position center
 		background-size cover
 		padding-top 170px
-		h1
+		p.title
 			font-family wow_font01
-			font-style italic
 			font-size 50px
 			line-height 81px
 			color wow_red_tomato
 			margin 0 0 15px
 			font-weight normal
+			text-transform uppercase
 		h2
 			font-size 22px
 			line-height 40px
@@ -85,11 +85,19 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 			line-height 32px
 			font-weight 300
 			margin-bottom 29px
+	span
+		color #426e86
+		font-family wow_font01
+		font-style italic
+		font-size 30px
+		line-height 48.6px
+		font-weight normal
+		text-align center
 
 @media only screen and (max-width: 980px)
 	#wow-aboutUs
 		#banner
-			h1
+			p.title
 				font-size 40px
 				line-height 64.8px
 			h2
@@ -102,7 +110,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		#banner
 			height 250px
 			padding-top 50px
-			h1, h2
+			p.title, h2
 				z-index 2
 				position relative
 			h2
@@ -125,12 +133,17 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 			p
 				font-size 18px
 				line-height 30px
+		span
+			padding 0 20px
+			font-size 25px
+			line-height 30px
+
 
 @media only screen and (max-width: 600px)
 	#wow-aboutUs
 		#banner
 			padding-top 0
-			h1
+			p.title
 				font-size 30px
 				line-height 40px
 				margin-top 20px
@@ -147,14 +160,14 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 @media only screen and (max-width: 500px)
 	#wow-aboutUs
 		#banner
-			h1
+			p.title
 				font-size 28px
 			h2
 				font-size 14px
 @media only screen and (max-width: 400px)
 	#wow-aboutUs
 		#banner
-			h1
+			p.title
 				font-size 26px
 			h2
 				font-size 13px
