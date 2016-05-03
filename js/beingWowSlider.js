@@ -66,3 +66,18 @@ function preValue() {
 
   }
 }
+
+function do_slide(){
+  interval = setInterval(function(){
+    nextValue();
+  }, 8000);
+}
+
+do_slide();
+
+$('.content-switcher').hover(function(){
+  clearInterval(interval);
+});
+$('.content-switcher').mouseleave(function(){
+  do_slide();
+});
