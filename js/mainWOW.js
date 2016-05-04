@@ -65,6 +65,23 @@
         });
     });
 
+    $(function(){
+        $(".sloganES").typed({
+            strings: [
+                "Desarrollo de Negocios",
+                "Marketing Digital",
+                "Showcasing your impact to the world!"],
+            typeSpeed: 20,
+            backDelay: 1300
+        });
+    });
+
+
+
+
+/**********************
+*  Scrol Nav
+**********************/
 function scrollNav() {
   $('.nav a').click(function(){
     //Toggle Class
@@ -140,4 +157,17 @@ function checkAnimation() {
 // Capture scroll events
 $(window).scroll(function(){
     checkAnimation();
+});
+
+
+
+// ===== Scroll to Top ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#language-switcher').fadeIn(200);
+        $('#return-to-top').fadeIn(200);   // Fade in the arrow
+    } else {
+        $('#language-switcher').fadeOut(200);
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
 });
