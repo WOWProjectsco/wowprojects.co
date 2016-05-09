@@ -329,6 +329,18 @@ strong
 }
 
 
+h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
+	font-family wow_font01
+	font-size 50px
+	line-height 81px
+	color wow_red_tomato
+	margin 0 0 15px
+	font-weight normal
+	text-transform uppercase
+	font-style inherit
+
+
+
 // For nclud css screen resizing
 @media only screen and (min-width: 1600px)
 	.footer-next-study-link, footer, header, main, nav
@@ -342,9 +354,20 @@ strong
 	.footer-next-study-link, footer, header, main, nav
 		font-size 82%
 
+
+@media only screen and (max-width: 980px)
+	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
+		font-size 40px
+		line-height 64.8px
+
 @media only screen and (min-width:602px) and (max-width:801px)
 	.footer-next-study-link, footer, header, main, nav
 		font-size 80%
+
+@media only screen and (max-width: 767px)
+	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
+		z-index 2
+		position relative
 
 @media only screen and (max-width:641px)
 	.footer-next-study-link, footer, header, main, nav
@@ -354,6 +377,13 @@ strong
 	.back-block-green-bottom-right:after
 		display: none
 
+@media only screen and (max-width: 500px)
+	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
+		font-size 28px
+
+@media only screen and (max-width: 400px)
+	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
+		font-size 26px
 
 .typed-cursor{
     opacity: 1;
