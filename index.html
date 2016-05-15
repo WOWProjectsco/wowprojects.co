@@ -70,7 +70,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img alt="brand" src="img/wow-logo_200x138.png">
+              <img alt="brand" src="./img/wow-logo_200x138.png">
             </a>
           </div>
 
@@ -78,6 +78,9 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#contactWOW" class="page-scroll"><span class="data-number">Contacto</span>Dí hola</a></li>
+
+              <!-- When we have the portforlio section done  -->
+              <!--
               <li class="dropdown">
                 <a href="#teamwow" class="page-scroll"><span class="data-number">Portafolio</span> <span class="caret"></span>Nuestro trabajo</a></a>
                 <ul class="dropdown-menu">
@@ -85,20 +88,24 @@
                   <li><a href="#">Clientes</a></li>
                 </ul>
               </li>
+              -->
+              <li>
+                <a href="#wow-clients" class="page-scroll"><span class="data-number">Clientes</span>Nuestro trabajo</a>
+              </li>
               <li class="dropdown">
-                <a href="./servicios.html" class="page-scroll"><span class="data-number">Servicios</span>¿Qué hacemos?</a>
+                <a href="./servicios.html" class="page-scroll"><span class="data-number">Servicios</span> <span class="caret"></span>¿Qué hacemos?</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Cómo trabajamos</a></li>
-                  <li><a href="#">Organizados para crecer</a></li>
-                  <li><a href="#">Lo que podemos hacer</a></li>
+                  <li><a href="./servicios.html#wow-howWeWork" class="page-scroll">Cómo trabajamos</a></li>
+                  <li><a href="./servicios.html#wow-ourTeamDNA" class="page-scroll">Organizados para crecer</a></li>
+                  <li><a href="./servicios.html#whatCanWeDoForYou" class="page-scroll">Lo que podemos hacer</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="./nosotros.html" class="page-scroll"><span class="data-number">Nosotros</span> <span class="caret"></span>Por qué lo hacemos</a></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Por qué lo hacemos</a></li>
-                  <li><a href="./nosotros.html#being-wow">Ser WOW</a></li>
-                  <li><a href="#">Equipo</a></li>
+                  <li><a href="./nosotros.html#wow-whyWeDoIt" class="page-scroll">Por qué lo hacemos</a></li>
+                  <li><a href="./nosotros.html#being-wow" class="page-scroll">Ser WOW</a></li>
+                  <li><a href="./nosotros.html#teamwow" class="page-scroll">Equipo</a></li>
                 </ul>
               </li>
               <li><a href="#wow-header" class="page-scroll"><span class="data-number">Inicio</span>WOWProjects</a></li>
@@ -107,7 +114,7 @@
 
         </div><!-- /.container-fluid -->
       </nav>
-      <header class="eliza height-100 black back-block-green-bottom-right" style="background-image: url('img/header-home.jpg');">
+      <header class="eliza height-100 black back-block-green-bottom-right" style="background-image: url('./img/header-home.jpg');">
         <div class="header-text grid_row padded-horizontal">
           <h1 class="grid3">Somos WOWProjects.</h1>
           <h2 class="grid2 sloganES">Showcasing your impact to the world!</h2>
@@ -115,6 +122,8 @@
         </div>
       </header>
     </section>
+
+    <hr>
 
     <main class="white">
       <section id="wow-aboutUs">
@@ -130,14 +139,7 @@
         </section>
       </section>
 
-      <section class="wow-whyWeDoIt">
-        <header class="height-60 black header-number">
-          <div class="header-text padded-horizontal grid_row">
-            <h1 class="grid3">¿Por qué lo hacemos?</h1>
-            <h2 class="grid2">Somos un equipo divertido, lleno de pasión y experiencia creativa; prosperamos ayudando a su empresa a sacar el mejor provecho de los medios de comunicación masiva en línea para mostrar su impacto al mundo.</h2>
-          </div>
-          </header>
-      </section>
+      <hr class="lighthr">
 
       <section class="wow-beingWow">
         <section id="being-wow" class="padded">
@@ -219,335 +221,103 @@
         </section>
       </section>
 
-      <section class="padded wow-howWeWork">
-        <section class="how-we-do" data-prpl-poi="How we operate">
-
-        <h2>¿Cómo trabajamos?</h2>
-
-        <p class="copy">Hay un tremendo poder en una historia bien contada.<br>
-        Más que una colección de diferentes video-clips, posts de Facebook y pins en Pinterest, WOWProjects ayuda a su empresa socialmente responsable a mostrar el impacto de su trabajo.</p>
-
-        <blockquote class="shout-out">Tratamos a nuestros clientes como socios</blockquote>
-
-        <p class="copy">Estamos comprometidos a continuamente entender, medir y ajustar nuestros esfuerzos para asegurar que su impacto se muestre a través de los mejores canales.</p>
-        </section>
-      </section>
-
-      <section class="padded wow-ourTeamDNA">
-        <section class="structured-scalability" data-prpl-poi="Structure">
-
-          <h2>Organizados para crecer</h2>
-
-          <p class="copy">El éxito en el entorno digital depende de la rapidez. En el corazón de cada proyecto exitoso hay un equipo ágil compartiendo objetivos comunes. Nuestro equipo interdisciplinario está preparado para los proyectos de todas formas y tamaños, lo que permite una colaboración eficaz con el cliente y con los demás.</p>
-          <br>
-          <p class="copy">Construímos las plataformas, estrategias y experiencias en línea que muestren el impacto de su organización.</p>
-
-
-          <figure class="mobile-chart c2-mobile">
-            <div class="sg-row">
-              <div class="mobile-chart-group ss1"><h2>Operaciones</h2></div>
-              <div class="mobile-chart-group ss2"><h2>Estrategia</h2></div>
-            </div>
-            <div class="sg-row">
-              <div class="mobile-chart-group ss3"><h2>Creatividad</h2></div>
-              <div class="mobile-chart-group ss4"><h2>Tecnología</h2></div>
-            </div>
-            <div class="sg-row">
-              <div class="mobile-chart-group ss5"><h2>Curación &amp; Mercadeo</h2></div>
-              <div class="mobile-chart-group ss6"><h2>Ejecución de Proyectos</h2></div>
-            </div>
-
-          </figure>
-
-
-          <figure class="chart chart-2 chart-scalability">
-              <div class="c2-wrap" mud-chart-scalability="">
-                <div class="c2-circ c2-circ-1 c2-circ-strategist" data-name="strategist" data-order="1">
-                  <svg version="1.1" id="c2Circ1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-red">Operaciones</h3>
-                </div>
-
-                <div class="c2-circ c2-circ-2 c2-circ-architect" data-name="architect" data-order="2">
-                  <!-- svg version="1.1" id="c2Circ2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 86.6 86.6" enable-background="new 0 0 86.6 86.6" xml:space="preserve" class="anim-rotate">
-                    <circle fill="#FFFFFF" cx="43.3" cy="43.3" r="43.3"></circle>
-                    <path class="outer-circle swatch-blue" fill="#EF585B" d="M43.3,10.5c18.1,0,32.8,14.7,32.8,32.8S61.4,76.1,43.3,76.1S10.5,61.4,10.5,43.3S25.2,10.5,43.3,10.5
-                       M43.3,0C19.4,0,0,19.4,0,43.3s19.4,43.3,43.3,43.3s43.3-19.4,43.3-43.3S67.2,0,43.3,0L43.3,0z"></path>
-                    <g opacity="0.2">
-                      <g>
-                        <path fill="#EF585B" class="inner-circle swatch-blue" d="M32.9,71.6C17.3,65.8,9.3,48.4,15.1,32.8S38.3,9.2,53.9,15l-1.9,5.3c-12.7-4.7-26.9,1.8-31.6,14.5
-                          s1.8,26.9,14.5,31.6c12.7,4.7,26.9-1.8,31.6-14.5l5.3,1.9C65.9,69.4,48.5,77.4,32.9,71.6z"></path>
-                      </g>
-                    </g>
-                  </svg> -->
-                  <svg version="1.1" id="c2Circ2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path class="outer-circle swatch-blue" fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" class="inner-circle swatch-blue" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-blue">Estrategia</h3>
-                </div>
-
-                <div class="c2-circ c2-circ-3 c2-circ-creative" data-name="creative" data-order="3">
-                  <svg version="1.1" id="c2Circ3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path class="outer-circle swatch-teal" fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" class="inner-circle swatch-teal" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-teal">Creatividad</h3>
-                </div>
-
-                <div class="c2-circ c2-circ-4 c2-circ-engineer" data-name="engineer" data-order="4">
-                  <svg version="1.1" id="c2Circ4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path class="outer-circle swatch-green" fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" class="inner-circle swatch-green" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-green">Tecnología</h3>
-                </div>
-
-                <div class="c2-circ c2-circ-5 c2-circ-content-marketing" data-name="content-marketing" data-order="5">
-                  <svg version="1.1" id="c2Circ5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path class="outer-circle swatch-purple" fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" class="inner-circle swatch-purple" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-purple">Curación &amp;<br>Mercadeo</h3>
-                </div>
-
-                <div class="c2-circ c2-circ-6 c2-circ-producer" data-name="producer" data-order="6">
-                  <svg version="1.1" id="c2Circ6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.7 52.7" enable-background="new 0 0 52.7 52.7" xml:space="preserve" class="anim-rotate">
-                    <g>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="26.3"></circle>
-                      <circle fill="#FFFFFF" cx="26.3" cy="26.3" r="24"></circle>
-                      <path class="outer-circle swatch-yellow" fill="#EF585B" d="M26.3,8.2c10,0,18.1,8.1,18.1,18.1s-8.1,18.1-18.1,18.1S8.2,36.3,8.2,26.3S16.3,8.2,26.3,8.2 M26.3,2.4
-                        c-13.2,0-24,10.7-24,24s10.7,24,24,24s24-10.7,24-24S39.6,2.4,26.3,2.4L26.3,2.4z"></path>
-                      <g opacity="0.2">
-                        <g>
-                          <path fill="#EF585B" class="inner-circle swatch-yellow" d="M20.8,41.9C12.3,38.7,8,29.3,11.1,20.8S23.7,8,32.2,11.1L31.1,14c-6.9-2.6-14.6,1-17.2,7.9
-                            s1,14.6,7.9,17.2s14.6-1,17.2-7.9l2.9,1.1C38.7,40.7,29.3,45,20.8,41.9z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <h3 class="c2-label swatch-yellow" style="height: 50px;">Ejecución de<br> Proyectos</h3>
-                </div>
-              <div class="c2-dots">
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-                  <span class="dot"></span>
-              </div>
-                <div class="c2-center">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
-                    <g opacity="0.5">
-                      <path style="fill: rgb(239, 88, 91);" d="M17.8,9.9c0.3-0.2,0.6-0.4,0.8-0.6l-2-3c-0.3,0.2-0.7,0.5-1,0.7L17.8,9.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M19.3,8.9c0.3-0.2,0.6-0.4,0.9-0.5l-1.8-3.1c-0.3,0.2-0.7,0.4-1,0.6L19.3,8.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M20.8,8c0.3-0.2,0.6-0.3,0.9-0.5l-1.6-3.2c-0.4,0.2-0.7,0.4-1.1,0.6L20.8,8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M15.1,12.1c0.3-0.2,0.5-0.4,0.8-0.7l-2.3-2.8c-0.3,0.3-0.6,0.5-0.9,0.8L15.1,12.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M13.8,13.3c0.2-0.2,0.5-0.5,0.7-0.7l-2.4-2.7c-0.3,0.3-0.6,0.6-0.9,0.8L13.8,13.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M22.4,7.2C22.7,7,23,6.9,23.3,6.7l-1.5-3.3c-0.4,0.2-0.7,0.3-1.1,0.5L22.4,7.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M16.4,11c0.3-0.2,0.5-0.4,0.8-0.6l-2.1-2.9c-0.3,0.2-0.6,0.5-1,0.7L16.4,11z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M27.3,5.2c0.3-0.1,0.7-0.2,1-0.3l-0.9-3.5c-0.4,0.1-0.8,0.2-1.2,0.3L27.3,5.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M30.8,4.3c0.3-0.1,0.7-0.1,1-0.2l-0.6-3.6c-0.4,0.1-0.8,0.1-1.2,0.2L30.8,4.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M32.5,4c0.3,0,0.7-0.1,1-0.1l-0.4-3.6c-0.4,0-0.8,0.1-1.2,0.2L32.5,4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M29,4.7c0.3-0.1,0.7-0.2,1-0.2l-0.8-3.5c-0.4,0.1-0.8,0.2-1.2,0.3L29,4.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M24,6.4c0.3-0.1,0.6-0.3,0.9-0.4l-1.3-3.4c-0.4,0.1-0.7,0.3-1.1,0.5L24,6.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M25.6,5.8c0.3-0.1,0.6-0.2,1-0.3L25.5,2c-0.4,0.1-0.8,0.3-1.1,0.4L25.6,5.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M12.5,14.6c0.2-0.2,0.5-0.5,0.7-0.7l-2.6-2.6c-0.3,0.3-0.6,0.6-0.8,0.9L12.5,14.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4.1,31.9c0.1-0.3,0.1-0.7,0.2-1l-3.5-0.8c-0.1,0.4-0.1,0.8-0.2,1.2L4.1,31.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4.4,30.1c0.1-0.3,0.1-0.7,0.2-1l-3.5-0.9C1.1,28.6,1,29,0.9,29.4L4.4,30.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M34.3,3.8c0.3,0,0.7-0.1,1-0.1l-0.2-3.6c-0.4,0-0.8,0.1-1.2,0.1L34.3,3.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4.9,28.4c0.1-0.3,0.2-0.7,0.3-1l-3.5-1.1c-0.1,0.4-0.2,0.8-0.3,1.2L4.9,28.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M3.7,35.4c0-0.3,0-0.7,0.1-1L0.2,34c0,0.4-0.1,0.8-0.1,1.2L3.7,35.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M3.6,37.2c0-0.3,0-0.7,0-1L0,36c0,0.4,0,0.8,0,1.2H3.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M3.8,33.6c0-0.3,0.1-0.7,0.1-1L0.4,32c-0.1,0.4-0.1,0.8-0.2,1.2L3.8,33.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M5.4,26.7c0.1-0.3,0.2-0.6,0.3-1l-3.4-1.3c-0.1,0.4-0.3,0.8-0.4,1.1L5.4,26.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M9.3,18.8c0.2-0.3,0.4-0.6,0.6-0.8l-2.9-2.1c-0.2,0.3-0.5,0.7-0.7,1L9.3,18.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M11.4,15.9c0.2-0.3,0.4-0.5,0.7-0.8l-2.7-2.4c-0.3,0.3-0.5,0.6-0.8,0.9L11.4,15.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M10.3,17.3c0.2-0.3,0.4-0.5,0.6-0.8l-2.8-2.3c-0.2,0.3-0.5,0.6-0.7,1L10.3,17.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M6,25c0.1-0.3,0.3-0.6,0.4-0.9l-3.3-1.5c-0.2,0.4-0.3,0.7-0.5,1.1L6,25z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M8.3,20.3c0.2-0.3,0.4-0.6,0.5-0.9l-3-2c-0.2,0.3-0.4,0.7-0.6,1L8.3,20.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M6.7,23.4c0.1-0.3,0.3-0.6,0.4-0.9l-3.2-1.6c-0.2,0.4-0.3,0.7-0.5,1.1L6.7,23.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M7.5,21.8c0.2-0.3,0.3-0.6,0.5-0.9l-3.1-1.8c-0.2,0.4-0.4,0.7-0.6,1.1L7.5,21.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M43.1,4.1c0.3,0.1,0.7,0.1,1,0.2l0.8-3.5c-0.4-0.1-0.8-0.1-1.2-0.2L43.1,4.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M36,3.7c0.3,0,0.7,0,1,0V0c-0.4,0-0.8,0-1.2,0L36,3.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M65.1,17.8c0.2,0.3,0.4,0.6,0.6,0.8l3-2c-0.2-0.3-0.5-0.7-0.7-1L65.1,17.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M67,20.8c0.2,0.3,0.3,0.6,0.5,0.9l3.2-1.6c-0.2-0.4-0.4-0.7-0.6-1.1L67,20.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M67.8,22.4c0.2,0.3,0.3,0.6,0.4,0.9l3.3-1.5c-0.2-0.4-0.3-0.7-0.5-1.1L67.8,22.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M64,16.4c0.2,0.3,0.4,0.5,0.6,0.8l2.9-2.1c-0.2-0.3-0.5-0.6-0.7-1L64,16.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M61.6,13.8c0.2,0.2,0.5,0.5,0.7,0.7l2.7-2.4c-0.3-0.3-0.6-0.6-0.8-0.9L61.6,13.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M62.9,15.1c0.2,0.3,0.4,0.5,0.7,0.8l2.8-2.3c-0.3-0.3-0.5-0.6-0.8-0.9L62.9,15.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M70.7,30.8c0.1,0.3,0.1,0.7,0.2,1l3.6-0.6c-0.1-0.4-0.1-0.8-0.2-1.2L70.7,30.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M71,32.5c0,0.3,0.1,0.7,0.1,1l3.6-0.4c0-0.4-0.1-0.8-0.2-1.2L71,32.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M60.4,12.5c0.2,0.2,0.5,0.5,0.7,0.7l2.6-2.6c-0.3-0.3-0.6-0.6-0.9-0.8L60.4,12.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M74.8,33.9l-3.6,0.4c0,0.3,0.1,0.7,0.1,1l3.6-0.2C74.9,34.7,74.8,34.3,74.8,33.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M69.8,27.3c0.1,0.3,0.2,0.7,0.3,1l3.5-0.9c-0.1-0.4-0.2-0.8-0.3-1.2L69.8,27.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M69.2,25.6c0.1,0.3,0.2,0.6,0.3,1l3.4-1.1c-0.1-0.4-0.3-0.8-0.4-1.1L69.2,25.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M68.5,24c0.1,0.3,0.3,0.6,0.4,0.9l3.4-1.3c-0.1-0.4-0.3-0.7-0.5-1.1L68.5,24z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M70.3,29c0.1,0.3,0.2,0.7,0.2,1l3.5-0.8c-0.1-0.4-0.2-0.8-0.3-1.2L70.3,29z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M66,19.3c0.2,0.3,0.4,0.6,0.5,0.9l3.1-1.8c-0.2-0.3-0.4-0.7-0.6-1L66,19.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M44.8,4.4c0.3,0.1,0.7,0.1,1,0.2l0.9-3.5C46.4,1.1,46,1,45.6,0.9L44.8,4.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M3.7,38.9c0-0.3,0-0.7,0-1H0c0,0.4,0,0.8,0,1.2L3.7,38.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M46.6,4.9c0.3,0.1,0.7,0.2,1,0.3l1.1-3.5c-0.4-0.1-0.8-0.2-1.2-0.3L46.6,4.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M41.3,3.8c0.3,0,0.7,0.1,1,0.1l0.6-3.6c-0.4-0.1-0.8-0.1-1.2-0.2L41.3,3.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M37.8,3.6c0.3,0,0.7,0,1,0L39,0c-0.4,0-0.8,0-1.2,0V3.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M39.6,3.7c0.3,0,0.7,0,1,0.1L41,0.2c-0.4,0-0.8-0.1-1.2-0.1L39.6,3.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M48.2,5.4c0.3,0.1,0.6,0.2,1,0.3l1.3-3.4c-0.4-0.1-0.8-0.3-1.1-0.4L48.2,5.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M59,11.4c0.3,0.2,0.5,0.4,0.8,0.7l2.4-2.7c-0.3-0.3-0.6-0.5-0.9-0.8L59,11.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M56.2,9.3c0.3,0.2,0.6,0.4,0.8,0.6l2.1-2.9c-0.3-0.2-0.7-0.5-1-0.7L56.2,9.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M57.6,10.3c0.3,0.2,0.5,0.4,0.8,0.6l2.3-2.8c-0.3-0.2-0.6-0.5-1-0.7L57.6,10.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M54.7,8.3c0.3,0.2,0.6,0.4,0.9,0.5l2-3c-0.3-0.2-0.7-0.4-1-0.6L54.7,8.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M51.5,6.7c0.3,0.1,0.6,0.3,0.9,0.4l1.6-3.2c-0.4-0.2-0.7-0.3-1.1-0.5L51.5,6.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M49.9,6c0.3,0.1,0.6,0.3,0.9,0.4l1.5-3.3c-0.4-0.2-0.7-0.3-1.1-0.5L49.9,6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M53.1,7.5c0.3,0.2,0.6,0.3,0.9,0.5l1.8-3.1c-0.4-0.2-0.7-0.4-1.1-0.6L53.1,7.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M30.1,70.5c-0.3-0.1-0.7-0.1-1-0.2l-0.9,3.5c0.4,0.1,0.8,0.2,1.2,0.3L30.1,70.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M54.1,67c-0.3,0.2-0.6,0.3-0.9,0.5l1.6,3.2c0.4-0.2,0.7-0.4,1.1-0.6L54.1,67z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M58.5,64c-0.3,0.2-0.5,0.4-0.8,0.6l2.1,2.9c0.3-0.2,0.6-0.5,1-0.7L58.5,64z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M55.7,66c-0.3,0.2-0.6,0.4-0.9,0.5l1.8,3.1c0.3-0.2,0.7-0.4,1-0.6L55.7,66z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M57.1,65.1c-0.3,0.2-0.6,0.4-0.8,0.6l2,3c0.3-0.2,0.7-0.5,1-0.7L57.1,65.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M62.4,60.4c-0.2,0.2-0.5,0.5-0.7,0.7l2.6,2.6c0.3-0.3,0.6-0.6,0.8-0.9L62.4,60.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M59.9,62.9c-0.3,0.2-0.5,0.4-0.8,0.7l2.3,2.8c0.3-0.3,0.6-0.5,0.9-0.8L59.9,62.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M61.2,61.6c-0.2,0.2-0.5,0.5-0.7,0.7l2.4,2.7c0.3-0.3,0.6-0.6,0.9-0.8L61.2,61.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M49.3,69.2c-0.3,0.1-0.6,0.2-1,0.3l1.1,3.4c0.4-0.1,0.8-0.3,1.1-0.4L49.3,69.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M45.9,70.3c-0.3,0.1-0.7,0.2-1,0.2l0.8,3.5c0.4-0.1,0.8-0.2,1.2-0.3L45.9,70.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M47.6,69.8c-0.3,0.1-0.7,0.2-1,0.3l0.9,3.5c0.4-0.1,0.8-0.2,1.2-0.3L47.6,69.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M52.6,67.8c-0.3,0.2-0.6,0.3-0.9,0.4l1.5,3.3c0.4-0.2,0.7-0.3,1.1-0.5L52.6,67.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M44.2,70.7c-0.3,0.1-0.7,0.1-1,0.2l0.6,3.6c0.4-0.1,0.8-0.1,1.2-0.2L44.2,70.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M63.6,59c-0.2,0.3-0.4,0.5-0.7,0.8l2.7,2.4c0.3-0.3,0.5-0.6,0.8-0.9L63.6,59z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M51,68.5c-0.3,0.1-0.6,0.3-0.9,0.4l1.3,3.4c0.4-0.1,0.7-0.3,1.1-0.5L51,68.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M70.1,46.6c-0.1,0.3-0.2,0.7-0.3,1l3.5,1.1c0.1-0.4,0.2-0.8,0.3-1.2L70.1,46.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M70.9,43.1c-0.1,0.3-0.1,0.7-0.2,1l3.5,0.8c0.1-0.4,0.1-0.8,0.2-1.2L70.9,43.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M42.5,71c-0.3,0-0.7,0.1-1,0.1l0.4,3.6c0.4,0,0.8-0.1,1.2-0.2L42.5,71z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M70.5,44.8c-0.1,0.3-0.1,0.7-0.2,1l3.5,0.9c0.1-0.4,0.2-0.8,0.3-1.2L70.5,44.8z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M71.1,41.3c0,0.3-0.1,0.7-0.1,1l3.6,0.6c0.1-0.4,0.1-0.8,0.2-1.2L71.1,41.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M71.3,36c0,0.3,0,0.7,0,1H75c0-0.4,0-0.8,0-1.2L71.3,36z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M71.3,37.8c0,0.3,0,0.7,0,1l3.6,0.2c0-0.4,0-0.8,0-1.2H71.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M64.7,57.6c-0.2,0.3-0.4,0.5-0.6,0.8l2.8,2.3c0.2-0.3,0.5-0.6,0.7-1L64.7,57.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M71.3,39.6c0,0.3,0,0.7-0.1,1l3.6,0.4c0-0.4,0.1-0.8,0.1-1.2L71.3,39.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M69.6,48.2c-0.1,0.3-0.2,0.6-0.3,1l3.4,1.3c0.1-0.4,0.3-0.8,0.4-1.1L69.6,48.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M67.5,53.1c-0.2,0.3-0.3,0.6-0.5,0.9l3.1,1.8c0.2-0.4,0.4-0.7,0.6-1.1L67.5,53.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M65.7,56.2c-0.2,0.3-0.4,0.6-0.6,0.8l2.9,2.1c0.2-0.3,0.5-0.7,0.7-1L65.7,56.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M66.6,54.7c-0.2,0.3-0.4,0.6-0.5,0.9l3,2c0.2-0.3,0.4-0.7,0.6-1L66.6,54.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M68.3,51.5c-0.1,0.3-0.3,0.6-0.4,0.9l3.2,1.6c0.2-0.4,0.3-0.7,0.5-1.1L68.3,51.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M69,49.9c-0.1,0.3-0.3,0.6-0.4,0.9l3.3,1.5c0.2-0.4,0.3-0.7,0.5-1.1L69,49.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M35.4,71.3c-0.3,0-0.7,0-1-0.1L34,74.8c0.4,0,0.8,0.1,1.2,0.1L35.4,71.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M8.9,55.7c-0.2-0.3-0.4-0.6-0.5-0.9l-3.1,1.8c0.2,0.3,0.4,0.7,0.6,1L8.9,55.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M9.9,57.1c-0.2-0.3-0.4-0.6-0.6-0.8l-3,2c0.2,0.3,0.5,0.7,0.7,1L9.9,57.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M14.6,62.4c-0.2-0.2-0.5-0.5-0.7-0.7l-2.6,2.6c0.3,0.3,0.6,0.6,0.9,0.8L14.6,62.4z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M13.3,61.2c-0.2-0.2-0.5-0.5-0.7-0.7l-2.7,2.4c0.3,0.3,0.6,0.6,0.8,0.9L13.3,61.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M7.2,52.6C7,52.3,6.9,52,6.7,51.6l-3.3,1.5c0.2,0.4,0.3,0.7,0.5,1.1L7.2,52.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M11,58.5c-0.2-0.3-0.4-0.5-0.6-0.8l-2.9,2.1c0.2,0.3,0.5,0.6,0.7,1L11,58.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M12.1,59.9c-0.2-0.3-0.4-0.5-0.7-0.8l-2.8,2.3c0.3,0.3,0.5,0.6,0.8,0.9L12.1,59.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M8,54.1c-0.2-0.3-0.3-0.6-0.5-0.9l-3.2,1.6c0.2,0.4,0.4,0.7,0.6,1.1L8,54.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4.7,45.9c-0.1-0.3-0.2-0.7-0.2-1l-3.5,0.8c0.1,0.4,0.2,0.8,0.3,1.2L4.7,45.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M6.4,51C6.3,50.6,6.2,50.3,6,50l-3.4,1.3c0.1,0.4,0.3,0.7,0.5,1.1L6.4,51z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4,42.5c0-0.3-0.1-0.7-0.1-1l-3.6,0.4c0,0.4,0.1,0.8,0.2,1.2L4,42.5z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M4.3,44.2c-0.1-0.3-0.1-0.7-0.2-1l-3.6,0.6c0.1,0.4,0.1,0.8,0.2,1.2L4.3,44.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M5.8,49.3c-0.1-0.3-0.2-0.6-0.3-1L2,49.5c0.1,0.4,0.3,0.8,0.4,1.1L5.8,49.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M5.2,47.6c-0.1-0.3-0.2-0.7-0.3-1l-3.5,0.9c0.1,0.4,0.2,0.8,0.3,1.2L5.2,47.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M20.3,66.6c-0.3-0.2-0.6-0.4-0.9-0.5l-2,3c0.3,0.2,0.7,0.4,1,0.6L20.3,66.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M33.6,71.1c-0.3,0-0.7-0.1-1-0.1L32,74.6c0.4,0.1,0.8,0.1,1.2,0.2L33.6,71.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M31.9,70.9c-0.3-0.1-0.7-0.1-1-0.2l-0.8,3.5c0.4,0.1,0.8,0.1,1.2,0.2L31.9,70.9z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M28.4,70.1c-0.3-0.1-0.7-0.2-1-0.3l-1.1,3.5c0.4,0.1,0.8,0.2,1.2,0.3L28.4,70.1z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M26.7,69.6c-0.3-0.1-0.6-0.2-1-0.3l-1.3,3.4c0.4,0.1,0.8,0.3,1.1,0.4L26.7,69.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M15.9,63.6c-0.3-0.2-0.5-0.4-0.8-0.7l-2.4,2.7c0.3,0.3,0.6,0.5,0.9,0.8L15.9,63.6z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M3.8,40.7c0-0.3-0.1-0.7-0.1-1l-3.6,0.2c0,0.4,0.1,0.8,0.1,1.2L3.8,40.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M37.2,71.3c-0.3,0-0.7,0-1,0L36,74.9c0.4,0,0.8,0,1.2,0V71.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M38.9,71.3c-0.3,0-0.7,0-1,0V75c0.4,0,0.8,0,1.2,0L38.9,71.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M25,69c-0.3-0.1-0.6-0.3-0.9-0.4l-1.5,3.3c0.4,0.2,0.7,0.3,1.1,0.5L25,69z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M18.8,65.7c-0.3-0.2-0.6-0.4-0.8-0.6l-2.1,2.9c0.3,0.2,0.7,0.5,1,0.7L18.8,65.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M17.3,64.7c-0.3-0.2-0.5-0.4-0.8-0.6l-2.3,2.8c0.3,0.2,0.6,0.5,1,0.7L17.3,64.7z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M40.7,71.2c-0.3,0-0.7,0.1-1,0.1l0.2,3.6c0.4,0,0.8-0.1,1.2-0.1L40.7,71.2z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M23.4,68.3c-0.3-0.1-0.6-0.3-0.9-0.4l-1.6,3.2c0.4,0.2,0.7,0.3,1.1,0.5L23.4,68.3z"></path>
-                      <path style="fill: rgb(239, 88, 91);" d="M21.8,67.5c-0.3-0.2-0.6-0.3-0.9-0.5l-1.8,3.1c0.4,0.2,0.7,0.4,1.1,0.6L21.8,67.5z"></path>
-                    </g>
-                  </svg>
-                  <h2 class="c2-active-label" style="text-align: center; font-size: 10px; color: black;">Colaboración<br>Interdisciplinaria</h2>
-                </div>
-
-
-                <svg version="1.1" id="MC2Backbone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 158 158" enable-background="new 0 0 158 158" xml:space="preserve" class="c2-backbone">
-                  <path fill="#E6E7E8" d="M133.4,106.6l-13.6-7.9c3.1-6.2,4.9-13.1,4.9-20.5c0-7.5-1.8-14.5-5-20.7l13.3-8l-3-5l-13.3,8
-                    C109,41.2,96.4,33.6,82,32.7V22.2h-5.8v10.5c-14.6,0.9-27.3,8.7-35,20.2L27.7,45l-2.9,5l13.5,7.9c-3,6.1-4.8,13-4.8,20.2
-                    c0,7.5,1.9,14.7,5.1,20.9l-13.5,8.1l3,5l13.5-8.1c7.7,11.1,20.2,18.6,34.5,19.5v11.1H82v-11.1c14.5-0.9,27.1-8.6,34.8-19.9l13.6,8
-                    L133.4,106.6z M120.1,78.2c0,6.5-1.5,12.7-4.3,18.2l-31-18.1l30.9-18.5C118.5,65.3,120.1,71.6,120.1,78.2z M112.7,54.8L82,73.2V37.3
-                    C94.7,38.2,105.8,44.9,112.7,54.8z M76.2,37.3v36l-31-18.1C52,45.1,63.3,38.2,76.2,37.3z M38.1,78.2c0-6.4,1.5-12.5,4.1-17.9
-                    l31.1,18.1L42.6,96.8C39.7,91.2,38.1,84.9,38.1,78.2z M45.6,101.7l30.6-18.3V119C63.6,118.1,52.5,111.5,45.6,101.7z M82,119V83.4
-                    l30.8,18C105.9,111.3,94.8,118.1,82,119z"></path>
-                  <g>
-                    <path fill="#E9E9EA" d="M79,158c-43.5,0-79-35.4-79-79C0,35.4,35.4,0,79,0c43.5,0,79,35.4,79,79C158,122.5,122.5,158,79,158z M79,5
-                      C38.2,5,5,38.2,5,79s33.2,74,74,74s74-33.2,74-74S119.8,5,79,5z"></path>
-                  </g>
-                  <circle fill="#FFFFFF" cx="79.1" cy="78.2" r="43.9"></circle>
-                  <path fill="#E6E7E8" d="M79.1,123.7c-25.1,0-45.5-20.4-45.5-45.5c0-25.1,20.4-45.5,45.5-45.5c25.1,0,45.5,20.4,45.5,45.5
-                    C124.6,103.3,104.2,123.7,79.1,123.7z M79.1,37.2c-22.6,0-41,18.4-41,41c0,22.6,18.4,41,41,41c22.6,0,41-18.4,41-41
-                    C120.1,55.6,101.7,37.2,79.1,37.2z"></path>
-                </svg>
-              </div>
-          </figure>
-        </section>
-      </section>
+      <hr>
 
       <section class="padded wow-whatCanWeDoForYou">
+        <section id="whatCanWeDoForYou">
+          <section class="container">
+            <div class="section-header v1">
+              <div class="container">
+                <h2 class="title">¿Qué podemos hacer por ti?</h3>
+                <div class="border-bottom">
+                </div>
+                <p>Construimos plataformas, desarrollamos estrategias y creamos experiencias online que comunicarán su <span>impacto</span> al mundo.</p>
+              </div>
+            </div>
+          </section>
+          <section class="main-services" style=" ">
+            <div class="container">
+              <div class="row ">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="service v1">
+                    <div class="icon">
+                      <a href="http://teslathemes.com/"><i class="fa fa-desktop"></i></a>
+                    </div>
+                    <div class="caption">
+                      <h4>Desarrollo Web</h4>
+                    </div>
+                    <div class="text">
+                      <p>Apoyamos en todos los aspectos de diseño y desarrollo web. Ayudamos a nuestros clientes a aprender y utilizar los recursos de la web
+                      para ser más eficientes en su negocio.</p>
+                      <ul>
+                        <li>Desarrollo Web</li>
+                        <li>Diseño Web</li>
+                        <li>Posicionamiento SEO</li>
+                        <li>Blogging</li>
+                        <li>Adaptación de la tecnología</li>
+                        <li>Desarrollo de aplicaciones</li>
+                        <li>Desarrollo de infraestructura de soporte</li>
+                        <li>Asesorías y consultorías</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="service v1">
+                    <div class="icon">
+                      <a href="http://teslathemes.com/"><i class="fa fa-bar-chart"></i></a>
+                    </div>
+                    <div class="caption">
+                      <h4>Marketing Digital</h4>
+                    </div>
+                    <div class="text">
+                      <p>Apoyamos en el desarrollo, análisis y construcción de una estrategia que permita adecuar la empresa que deseas por una ruta factible
+                      que genere el desarrollo integral de tus negocios.</p>
+                      <ul>
+                        <li>Análisis del estado actual</li>
+                        <li>Planificación y adaptación de contenidos claves</li>
+                        <li>Estrategias acorde al giro empresarial</li>
+                        <li>Community Manager</li>
+                        <li>Gestión de campañas</li>
+                        <li>Herramientas de seguimiento</li>
+                        <li>Análisis de estrategia</li>
+                        <li>Asesorías y consultorías</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="service v1">
+                    <div class="icon">
+                      <a href="http://teslathemes.com/"><i class="fa fa-suitcase"></i></a>
+                    </div>
+                    <div class="caption">
+                      <h4>Desarrollo de Negocios</h4>
+                    </div>
+                    <div class="text">
+                      <p>Brindamos orientación en herramientas como el Bussiness Model Canvas, Planes y Modelos de Negocio para ayudarte a desarrollar tu proyecto.
+                      Nos enfocamos en el desarrollo de nuevas Startups.</p>
+                      <ul>
+                        <li>Desarrollo de planes de negocio</li>
+                        <li>Desarrollo de modelos de negocio</li>
+                        <li>Gestión de proyectos</li>
+                        <li>Análisis financiero</li>
+                        <li>Análisis de puntos de equilibrio</li>
+                        <li>Asesorías y consultorías</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </section>
       </section>
+
+      <hr>
 
       <section class="padded wow-teamwow">
         <section id="teamwow">
@@ -631,7 +401,9 @@
         </section>
       </section>
 
-      <section class="padded wow-clients">
+      <hr>
+
+      <section id="wow-clients" class="padded wow-clients">
         <section class="client-grid-area" data-prpl-poi="Client partners">
           <h2 class="title">CLIENTES</h2>
 
@@ -717,20 +489,9 @@
 
         </section>
       </section>
-
-      <section class="padded wow-partners">
-
-      </section>
-
-      <section class="padded wow-testimonials">
-
-      </section>
-
-      <section class="padded wow-portfolio">
-
-      </section>
     </main>
 
+    <hr>
 
     <footer id="contactWOW" class="wow-footer Style_1">
       <section class="upper-part">

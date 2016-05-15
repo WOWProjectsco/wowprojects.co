@@ -1,0 +1,205 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Edwin Xico <contact@xicoofficial.co>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://wowprojects.co
+ */
+@font-face {
+  font-family: HUELIC;
+  font-style: normal;
+  src: url("fonts/HUELIC/HUELIC_B.ttf");
+}
+@font-face {
+  font-family: century-gothic;
+  font-style: normal;
+  src: url("fonts/century-gothic.ttf");
+}
+@font-face {
+  font-family: museo_500;
+  font-style: normal;
+  src: url("fonts/museo_500/Museo500-Regular-webfont.ttf");
+}
+@font-face {
+  font-family: caneletter_script;
+  font-style: normal;
+  src: url("fonts/caneletter_script/CaneletterScript_PersonalUse.otf");
+}
+/**********************************
+* Being WOW
+***********************************/
+.wow-whatCanWeDoForYou {
+  padding: 0;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services {
+  text-align: center;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 a {
+  text-decoration: none;
+  border: 1px solid #426e86;
+  color: #426e86;
+  background: transparent;
+  display: inline-block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 a i {
+  display: inline-block;
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  padding-top: 26px;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 a:hover {
+  background: #426e86;
+  color: #f8f1e5;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 .caption h4 {
+  text-align: center;
+  margin: 30px 0;
+  color: #426e86;
+  font-size: 21px;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 .text p,
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 .text ul {
+  font-size: 14px;
+  line-height: 21px;
+  color: #2f3131;
+  text-align: justify;
+  margin-bottom: 2px;
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou .main-services .service.v1 .text ul {
+  text-align: left;
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 10%;
+  padding-bottom: 50px;
+  font-family: century-gothic, 'Tungsten A', 'Tungsten B';
+}
+.wow-whatCanWeDoForYou #whatCanWeDoForYou>p {
+  color: #426e86;
+  font-family: HUELIC, NeueHaasBold, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 48.6px;
+}
+@media only screen and (max-width: 1215px) {
+  .wow-teamwow #teamwow .slider-left {
+    left: 20px;
+    top: 18px;
+  }
+  .wow-teamwow #teamwow .slider-right {
+    right: 20px;
+    top: 18px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .wow-teamwow #value-slider article .wrap span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .wow-teamwow #value-slider article .wrap div {
+    margin-left: 106px;
+  }
+  .wow-teamwow #value-slider article .wrap h4 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .wow-teamwow #value-slider article .wrap p {
+    font-size: 16px;
+    line-height: 25.92px;
+  }
+  .wow-teamwow .slider-left {
+    left: 20px;
+  }
+  .wow-teamwow .slider-right {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wow-teamwow #teamwow {
+    padding: 50px 0;
+  }
+  .wow-teamwow #teamwow .team .member {
+    padding-right: 15px;
+  }
+  .wow-teamwow #being-wow>p {
+    padding: 0 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wow-teamwow #teamwow #slider-wrap {
+    padding: 0 30px;
+  }
+  .wow-teamwow #teamwow .pager span {
+    margin: 0;
+  }
+  .wow-teamwow .slider-left,
+  .wow-teamwow .slider-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wow-teamwow .inc.slider-left,
+  .wow-teamwow .nav-arrow.left {
+    background-position: -384px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+  .wow-teamwow .inc.slider-right,
+  .wow-teamwow .nav-arrow.right {
+    background-position: -448px -448px;
+    width: 23px;
+    height: 55px;
+    display: inline-block;
+  }
+  .wow-teamwow #teamwow p.title {
+    font-size: 30px;
+  }
+}
+.icn {
+  display: block;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+}
+.icn span {
+  display: none;
+}
+.icn.slider-left,
+.nav-arrow.left {
+  background-position: -384px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}
+.icn.slider-right,
+.nav-arrow.right {
+  background-position: -448px -448px;
+  width: 23px;
+  height: 55px;
+  display: inline-block;
+}

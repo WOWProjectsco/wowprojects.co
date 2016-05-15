@@ -31,9 +31,30 @@ wow_red_tomato = #cf3721
 wow_white_bone_75 = rgba(248,241,229, 0.75)
 wow_white_bone_65 = rgba(248,241,229, 0.65)
 
-wow_font01 = NeueHaasBold, Helvetica, sans-serif
-wow_font02 = 'Tungsten A', 'Tungsten B'
+@font-face
+	font-family HUELIC
+	font-style normal
+	src url(fonts/HUELIC/HUELIC_B.ttf)
 
+@font-face
+	font-family century-gothic
+	font-style normal
+	src url(fonts/century-gothic.ttf)
+
+@font-face
+	font-family museo_500
+	font-style normal
+	src url(fonts/museo_500/Museo500-Regular-webfont.ttf)
+
+@font-face
+	font-family caneletter_script
+	font-style normal
+	src url(fonts/caneletter_script/CaneletterScript_PersonalUse.otf)
+
+wow_font01 = HUELIC, NeueHaasBold, Helvetica, sans-serif
+wow_font02 = century-gothic,'Tungsten A', 'Tungsten B'
+wow_font03 = museo_500, Helvetica, sans-serif
+wow_font04 = caneletter_script
 
 
 /**********************************
@@ -41,8 +62,6 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 ***********************************/
 #wow-aboutUs
 	padding 0 0 65px 0
-	border-top 8px solid wow_black_coal
-	border-bottom 8px solid wow_black_coal
 	#banner
 		display block
 		position relative
@@ -58,6 +77,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 			max-width 800px
 			margin 0 auto
 			color wow_black_coal
+			font-family wow_font02
 	#humaan-intro
 		max-width 940px
 		margin 0 auto
@@ -73,13 +93,13 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		-moz-column-gap 50px
 		column-gap 50px
 		p
-			font-size 19px
+			font-size 17px
 			line-height 32px
 			font-weight 300
 			margin-bottom 29px
 	span
 		color #426e86
-		font-family wow_font01
+		font-family wow_font04
 		font-style italic
 		font-size 30px
 		line-height 48.6px
@@ -120,7 +140,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 			-webkit-column-count 1
 			column-count 1
 			p
-				font-size 18px
+				font-size 16px
 				line-height 30px
 		span
 			padding 0 20px
@@ -139,7 +159,7 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 		#humaan-intro
 			padding 40px 30px 0
 			p
-				font-size 16px
+				font-size 14px
 				line-height 28px
 
 @media only screen and (max-width: 500px)

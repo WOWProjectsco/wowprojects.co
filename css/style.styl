@@ -28,8 +28,31 @@ wow_black_coal = #2F3131
 wow_blue_steel = #426e86
 wow_red_tomato = #cf3721
 
-wow_font01 = NeueHaasBold, Helvetica, sans-serif
-wow_font02 = 'Tungsten A', 'Tungsten B'
+@font-face
+	font-family HUELIC
+	font-style normal
+	src url(fonts/HUELIC/HUELIC_B.ttf)
+
+@font-face
+	font-family century-gothic
+	font-style normal
+	src url(fonts/century-gothic.ttf)
+
+@font-face
+	font-family museo_500
+	font-style normal
+	src url(fonts/museo_500/Museo500-Regular-webfont.otf)
+
+@font-face
+	font-family caneletter_script
+	font-style normal
+	src url(fonts/caneletter_script/CaneletterScript_PersonalUse.ttf)
+
+wow_font01 = HUELIC, NeueHaasBold, Helvetica, sans-serif
+wow_font02 = century-gothic,'Tungsten A', 'Tungsten B'
+wow_font03 = museo_500, Helvetica, sans-serif
+wow_font04 = caneletter_script
+
 
 /*
 * User Agent
@@ -140,9 +163,17 @@ p, ul, ol
 
 p
 	margin 0 0 20px
+	font-size 18px
+	line-height 32px
+	font-weight 300
+	margin-bottom 29px
+	font-family wow_font02
 	span
 		font-weight bold
 
+
+h3,h4,h5,h6
+	font-family wow_font01
 
 .footer-next-study-link, footer, header, main, nav
 	font-size 100%
@@ -338,13 +369,26 @@ h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
 	font-weight normal
 	text-transform uppercase
 	font-style inherit
+	text-align center
 
 
+p
+	font-size 19px
+	line-height 32px
+	font-weight 300
+	margin-bottom 29px
+	font-family wow_font02
+
+hr
+	border-top 8px solid wow_black_coal
+	margin 0
+hr.lighthr
+	border-top 4px solid wow_black_coal
 
 // For nclud css screen resizing
 @media only screen and (min-width: 1600px)
 	.footer-next-study-link, footer, header, main, nav
-   		font-size 115%
+		font-size 115%
 
 @media only screen and (min-width:1401px) and (max-width:1559px)
 	.footer-next-study-link, footer, header, main, nav
@@ -368,6 +412,9 @@ h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
 	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
 		z-index 2
 		position relative
+	p
+		font-size 16px
+		line-height 30px
 
 @media only screen and (max-width:641px)
 	.footer-next-study-link, footer, header, main, nav
@@ -376,6 +423,9 @@ h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
 		display: none
 	.back-block-green-bottom-right:after
 		display: none
+	p
+		font-size: 14px
+		line-height: 28px
 
 @media only screen and (max-width: 500px)
 	h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
@@ -391,17 +441,18 @@ h2.title, #wow-aboutUs #banner h2.title, .wow-clients .client-grid-area h2.title
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 @keyframes {blink}
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+	0% { opacity:1; }
+	50% { opacity:0; }
+ 	100% { opacity:1; }
 
 @-webkit-keyframes {blink}
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 
 @-moz-keyframes {blink}
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }

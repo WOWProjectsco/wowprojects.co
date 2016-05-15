@@ -59,6 +59,7 @@
             strings: [
                 "Business Development",
                 "Digital Marketing",
+                "Web Development",
                 "Showcasing your impact to the world!"],
             typeSpeed: 20,
             backDelay: 1300
@@ -70,6 +71,7 @@
             strings: [
                 "Desarrollo de Negocios",
                 "Marketing Digital",
+                "Desarrollo Web",
                 "Showcasing your impact to the world!"],
             typeSpeed: 20,
             backDelay: 1300

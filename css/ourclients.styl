@@ -30,8 +30,30 @@ wow_red_tomato = #cf3721
 
 wow_white_bone_48 = rgba(248, 241, 229, 0.48)
 
-wow_font01 = NeueHaasBold, Helvetica, sans-serif
-wow_font02 = 'Tungsten A', 'Tungsten B'
+@font-face
+	font-family HUELIC
+	font-style normal
+	src url(fonts/HUELIC/HUELIC_B.ttf)
+
+@font-face
+	font-family century-gothic
+	font-style normal
+	src url(fonts/century-gothic.ttf)
+
+@font-face
+	font-family museo_500
+	font-style normal
+	src url(fonts/museo_500/Museo500-Regular-webfont.ttf)
+
+@font-face
+	font-family caneletter_script
+	font-style normal
+	src url(fonts/caneletter_script/CaneletterScript_PersonalUse.otf)
+
+wow_font01 = HUELIC, NeueHaasBold, Helvetica, sans-serif
+wow_font02 = century-gothic,'Tungsten A', 'Tungsten B'
+wow_font03 = museo_500, Helvetica, sans-serif
+wow_font04 = caneletter_script
 
 /**********************************
 * Being WOW
@@ -39,8 +61,6 @@ wow_font02 = 'Tungsten A', 'Tungsten B'
 .wow-clients
 	.client-grid-area
 		text-align center
-		border-bottom: 8px solid wow_blue_steel;
-		border-top: 8px solid wow_blue_steel;
 		padding 60px 20px
 		h2
 			color wow_green_olive
