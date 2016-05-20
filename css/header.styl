@@ -48,10 +48,16 @@ wow_red_tomato = #cf3721
 	font-style normal
 	src url(fonts/caneletter_script/CaneletterScript_PersonalUse.otf)
 
+@font-face
+	font-family martina_regular
+	font-style normal
+	src url(fonts/Martina_Regular.ttf)
+
 wow_font01 = HUELIC, NeueHaasBold, Helvetica, sans-serif
 wow_font02 = century-gothic,'Tungsten A', 'Tungsten B'
 wow_font03 = museo_500, Helvetica, sans-serif
 wow_font04 = caneletter_script
+wow_font_slogan = martina_regular
 
 
 /**********************************
@@ -234,6 +240,8 @@ wow_font04 = caneletter_script
 		transform translateY(-50%)
 		pointer-events none
 		z-index 10
+		.sloganES
+			font-family wow_font_slogan
 		h1
 			color wow_white_bone
 		h2
